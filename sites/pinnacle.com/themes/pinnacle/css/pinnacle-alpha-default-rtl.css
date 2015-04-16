@@ -1,30 +1,53 @@
+/* Include Default Variables & Mixins */
+/*
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
 @import url(//fonts.googleapis.com/css?family=Gentium+Basic:400,700);
-/* Include Default Variables & Mixins */
-/**
-* Navigation
-*/
-.navigation .primary-menu ul li.first a,
-.navigation .second-menu ul li.first a {
-  -moz-border-radius: 0 8px 8px 0 !important;
-  -webkit-border-radius: 0 8px 8px 0 !important;
-  -khtml-border-radius: 0 8px 8px 0 !important;
-  border-radius: 0 8px 8px 0 !important; }
-.navigation .primary-menu ul li.last a,
-.navigation .second-menu ul li.last a {
-  -moz-border-radius: 8px 0 0 8px !important;
-  -webkit-border-radius: 8px 0 0 8px !important;
-  -khtml-border-radius: 8px 0 0 8px !important;
-  border-radius: 8px 0 0 8px !important; }
 
-/**
-* Blocks
-*/
-/* HP blocks: Top advert */
-#promotional_banner {
-  left: auto;
-  right: -10px; }
+$bodybg: #FFF;
+$headerfont: 'Open Sans', sans-serif;
+$altheaderfont: 'Gentium Basic', serif;
 
-.block-shipping-discount {
-  left: auto;
-  right: -50px; }
+//text color
+$color1: #2698F2;
+$color2: #FFF;
+
+
+// mobile specific elements
+$mobilemenubg: #444;
+$tabletmenubg: transparent;
+// User Zone
+$topbarbackground: #888;
+// shopping cart block (in user zone)
+$cartceckoutbg: #999;
+$cartceckoutcolor: #FFF;
+// main menu
+$mainmenuitembg: #EEE;
+$mainmenuitemborder: 1px solid #CCC;
+$mainmenulinkcolor: #888;
+$mainmenuitembghover: #FFF;
+$mainmenuitemborderhover: 1px solid #CCC;
+$mainmenuitemfonthover: #999;
+$mainmenuitemfontactive: #000;
+// secondary menu
+$secondarymenuitembg: #EEE;
+$secondarymenuitemborder: 1px solid #CCC;
+$secondarymenulinkcolor: #888;
+$secondarymenuitembghover: #FFF;
+$secondarymenuitemborderhover: 1px solid #CCC;
+$secondarymenuitemfonthover: #999;
+$secondarymenuitemfontactive: #000;
+// promotional banner
+$promobannerbg: #999;
+$promobannercolor: #FFF;
+$promobannerbuttonbg: #888;
+$promobannerbuttoncolor: #FFF;
+$promobannerbuttonborder: 1px solid #CCC;
+// footer
+$footerbg: #FFF;
+$footermenuheadercolor: #666;
+$footermenulinkcolor: #999;
+
+$footer2bg: #CCC;
+*/
+
+/*# sourceMappingURL=pinnacle-alpha-default-rtl.css.map */
