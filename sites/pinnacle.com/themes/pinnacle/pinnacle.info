@@ -71,12 +71,11 @@ css[pinnacle_style.css][options][weight] = 12
 settings[alpha_css][pinnacle_style.css] = 'pinnacle_style.css'
 
 ; OPTIONAL LIBRARIES
-;
-;libraries[uitoux_theme_custom][name] = UI To UX theme JS
-;libraries[uitoux_theme_custom][description] = This file holds all the custom JS.
-;libraries[uitoux_theme_custom][js][0][file] = uitoux_theme_custom.js
-;libraries[uitoux_theme_custom][js][0][options][weight] = 15
-;settings[alpha_libraries][uitoux_theme_custom] = 'uitoux_theme_custom'
+libraries[pinnacle_custom][name] = Custom Theme JS
+libraries[pinnacle_custom][description] = This file holds all the custom JS.
+libraries[pinnacle_custom][js][0][file] = pinnacle_custom.js
+libraries[pinnacle_custom][js][0][options][weight] = 15
+settings[alpha_libraries][pinnacle_custom] = 'pinnacle_custom'
 
 ; THEME SETTINGS (DEFAULTS)
 
