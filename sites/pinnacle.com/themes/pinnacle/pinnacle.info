@@ -41,6 +41,12 @@ regions[footer_third] = Footer Third
 regions[footer2_first] = Footer2 First
 regions[footer2_second] = Footer2 Second
 
+; CUSTOM REGIONS
+
+regions[postscript2_first] = Postscript 2 First
+regions[postscript2_second] = Postscript 2 Second
+regions[postscript2_third] = Postscript 2 Third
+
 ; ZONES
 
 zones[user] = User
@@ -53,6 +59,9 @@ zones[postscript] = Postscript
 zones[footer] = Footer first
 zones[footer2] = Footer second
 
+; CUSTOM ZONES
+
+zones[postscript2] = Postscript 2
 
 ; OPTIONAL STYLESHEETS
 
