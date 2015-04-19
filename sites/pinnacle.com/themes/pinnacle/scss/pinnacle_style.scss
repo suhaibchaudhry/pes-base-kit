@@ -6,3 +6,12 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 /* End Variables & Mixins */
+
+/*Header*/
+#zone-user-wrapper .block-block-1 p {
+	text-align: right;
+}
+
+#page-title {
+	display: none;
+}

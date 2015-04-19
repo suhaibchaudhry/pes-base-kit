@@ -7,5 +7,11 @@
 @import url(//fonts.googleapis.com/css?family=Gentium+Basic:400,700);
 */
 /* End Variables & Mixins */
+/*Header*/
+#zone-user-wrapper .block-block-1 p {
+  text-align: right; }
+
+#page-title {
+  display: none; }
 
 /*# sourceMappingURL=pinnacle_style.css.map */
