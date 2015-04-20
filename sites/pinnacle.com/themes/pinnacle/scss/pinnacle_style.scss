@@ -38,6 +38,16 @@
 		.block {
 			position: static;
 			padding: 10px 20px 0;
+
+			h2 {
+				text-transform: lowercase;
+				color: #fff;
+				border-bottom: 1px solid #fff;
+				line-height: 1.5em;
+  				margin-bottom: 15px;
+  				font-size: 21px;
+  				text-shadow: 1px 2px 4px #555555;
+			}
 		}
 	}
 
