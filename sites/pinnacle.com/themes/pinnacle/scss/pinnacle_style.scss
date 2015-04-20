@@ -25,6 +25,10 @@
                 font-weight: bold;
                 @include rounded-corners (3px);
         }	
+	
+	.region {
+		position: relative;
+	}
 
 	.region-postscript2-first {
 		.block {
