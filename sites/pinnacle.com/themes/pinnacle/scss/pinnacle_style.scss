@@ -20,7 +20,9 @@
 #zone-postscript2 {
 	.region-postscript2-first {
 		.block {
-			background: #E3C0AC;
+			padding: 0px 25px;
+			box-shadow: 0 0 5px #646464;
+			background: #E3C9AC;
 			@include rounded-corners(3px);
 		} 
 	}
