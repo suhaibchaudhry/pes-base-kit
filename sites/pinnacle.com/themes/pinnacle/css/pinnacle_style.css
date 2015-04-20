@@ -8,7 +8,19 @@
 */
 /* End Variables & Mixins */
 /*Header*/
-#zone-user-wrapper .block-block-1 p {
+#zone-user-wrapper .region-user-second p {
   text-align: right; }
+
+/*Info Blocks*/
+#zone-postscript2 .region-postscript2-first .block {
+  background: #E3C0AC;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px; }
+
+/*Testimonials*/
+.front-testimonials .views-row-last hr {
+  display: none; }
 
 /*# sourceMappingURL=pinnacle_style.css.map */

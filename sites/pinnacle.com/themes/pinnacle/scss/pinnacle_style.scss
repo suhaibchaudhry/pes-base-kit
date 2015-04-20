@@ -8,6 +8,37 @@
 /* End Variables & Mixins */
 
 /*Header*/
-#zone-user-wrapper .block-block-1 p {
-	text-align: right;
+#zone-user-wrapper {
+	.region-user-second {
+		p {
+			text-align: right;
+		}
+	}
+}
+
+/*Info Blocks*/
+#zone-postscript2 {
+	.region-postscript2-first {
+		.block {
+			background: #E3C0AC;
+			@include rounded-corners(3px);
+		} 
+	}
+
+	.region-postscript2-second {
+		
+	}
+
+	.region-postscript2-third {
+			
+	}
+}
+
+/*Testimonials*/
+.front-testimonials {
+	.views-row-last {
+		hr {
+			display: none;
+		}
+	}
 }
