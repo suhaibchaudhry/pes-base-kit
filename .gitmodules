@@ -1,0 +1,3 @@
+[submodule "sites/all/themes"]
+	path = sites/all/themes
+	url = git@bitbucket.org:uitouxteam/ui-to-ux-theme-kit.git
