@@ -18,21 +18,37 @@
 
 /*Info Blocks*/
 #zone-postscript2 {
+	a.learnmore-button {
+                color: #fff;
+                margin: 0px 0px 15px;
+                padding: 5px 15px;
+                font-weight: bold;
+                @include rounded-corners (3px);
+        }	
+
 	.region-postscript2-first {
 		.block {
 			padding: 0px 25px;
 			box-shadow: 0 0 5px #646464;
 			background: #E3C9AC;
-			@include rounded-corners(3px);
-		} 
+			@include rounded-corners (3px);
+		}
+			
+		a.learnmore-button {
+			background: #B48456;
+		}
 	}
 
 	.region-postscript2-second {
-		
+		a.learnmore-button {
+			background: #DFC1A3;
+		}
 	}
 
 	.region-postscript2-third {
-			
+		a.learnmore-button {
+			background: #11BAEA;
+		}	
 	}
 }
 

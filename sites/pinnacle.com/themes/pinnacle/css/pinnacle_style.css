@@ -12,6 +12,15 @@
   text-align: right; }
 
 /*Info Blocks*/
+#zone-postscript2 a.learnmore-button {
+  color: #fff;
+  margin: 0px 0px 15px;
+  padding: 5px 15px;
+  font-weight: bold;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px; }
 #zone-postscript2 .region-postscript2-first .block {
   padding: 0px 25px;
   box-shadow: 0 0 5px #646464;
@@ -20,6 +29,12 @@
   -webkit-border-radius: 3px;
   -khtml-border-radius: 3px;
   border-radius: 3px; }
+#zone-postscript2 .region-postscript2-first a.learnmore-button {
+  background: #B48456; }
+#zone-postscript2 .region-postscript2-second a.learnmore-button {
+  background: #DFC1A3; }
+#zone-postscript2 .region-postscript2-third a.learnmore-button {
+  background: #11BAEA; }
 
 /*Testimonials*/
 .front-testimonials .views-row-last hr {
