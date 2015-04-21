@@ -1,15 +1,1 @@
-/* This file will hold styles that are loaded using the same media query as the narrow grid. */
-/* If you are using the default media queries provided by Omega, these styles will also
- *  apply to the normal and widescreen layouts. You may override these styles in the normal
- *  and widescreen CSS files as appropriate. */
-#zone-postscript2 a.learnmore-button {
-  position: absolute;
-  right: 22px;
-  bottom: 14px;
-  display: inline;
-  padding: 5px 15px;
-  width: auto; }
-#zone-postscript2 .region .block {
-  padding: 10px 20px 55px; }
-
-/*# sourceMappingURL=pinnacle-alpha-default-narrow.css.map */
+#zone-postscript2 a.learnmore-button{position:absolute;right:22px;bottom:14px;display:inline;padding:5px 15px;width:auto}#zone-postscript2 .region .block{padding:10px 20px 55px}
