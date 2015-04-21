@@ -32,7 +32,8 @@
 	
 	.region {
 		position: relative;
-		box-shadow: 0 0 5px #646464;
+		/*box-shadow: 0 0 5px #646464;*/
+		@include single-box-shadow(0, 0, 5px, null, #646464, null);
 		@include rounded-corners (3px);
 		
 
