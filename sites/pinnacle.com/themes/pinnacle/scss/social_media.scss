@@ -1,0 +1,26 @@
+@import "_mixins.scss";
+
+a.social-button {
+	float: left;
+
+	height: 43px;
+	width: 55px;
+}
+
+a.twitter {
+	@include social-media-button(twitter);
+	width: 56px;
+}
+
+a.facebook {
+	@include social-media-button(fbook);
+}
+
+a.gplus {
+	@include social-media-button(gplus);
+}
+
+a.youtube {
+	@include social-media-button(youtube);
+	width: 62px;
+}

@@ -37,3 +37,12 @@
   -moz-border-radius-#{$side}: $radius;
   -webkit-border-#{$side}-radius: $radius;
 }
+
+@mixin social-media-button($image_name) {
+  background: url(../images/social_media/#{$image_name}.png) no-repeat;
+  text-indent: -9999px;
+
+  &:hover {
+    background-image: url(../images/social_media/#{$image_name}-h.png);
+  }
+}
