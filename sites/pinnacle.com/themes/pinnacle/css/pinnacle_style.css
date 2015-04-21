@@ -8,8 +8,15 @@
 */
 /* End Variables & Mixins */
 /*Header*/
-#zone-user-wrapper .region-user-second p {
-  text-align: right; }
+#zone-user-wrapper {
+  height: 45px; }
+  #zone-user-wrapper .region-user-second p {
+    text-align: right; }
+
+#zone-branding .region-menu {
+  margin: 45px 0 0; }
+  #zone-branding .region-menu .primary-menu {
+    float: right; }
 
 /*Info Blocks*/
 #zone-postscript2 a.learnmore-button {

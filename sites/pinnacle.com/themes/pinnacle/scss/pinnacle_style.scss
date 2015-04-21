@@ -10,9 +10,21 @@
 
 /*Header*/
 #zone-user-wrapper {
+	height: 45px;
+
 	.region-user-second {
 		p {
 			text-align: right;
+		}
+	}
+}
+
+#zone-branding {
+	.region-menu {
+		margin: 45px 0 0;
+
+		.primary-menu {
+			float: right;
 		}
 	}
 }
