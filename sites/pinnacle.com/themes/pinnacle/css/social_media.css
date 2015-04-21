@@ -1,17 +1,17 @@
-.social_media-sprite, .social_media-fbook-h, .social_media-fbook, .social_media-gplus-h, .social_media-gplus, .social_media-twitter-h, a.twitter:hover, .social_media-twitter, a.twitter, .social_media-youtube-h, .social_media-youtube {
+.social_media-sprite, .social_media-fbook-h, a.facebook:hover, .social_media-fbook, a.facebook, .social_media-gplus-h, a.gplus:hover, .social_media-gplus, a.gplus, .social_media-twitter-h, a.twitter:hover, .social_media-twitter, a.twitter, .social_media-youtube-h, a.youtube:hover, .social_media-youtube, a.youtube {
   background-image: url('../images/social_media-s8dd9f8b236.png');
   background-repeat: no-repeat; }
 
-.social_media-fbook-h {
+.social_media-fbook-h, a.facebook:hover {
   background-position: 0 0; }
 
-.social_media-fbook {
+.social_media-fbook, a.facebook {
   background-position: 0 -43px; }
 
-.social_media-gplus-h {
+.social_media-gplus-h, a.gplus:hover {
   background-position: 0 -86px; }
 
-.social_media-gplus {
+.social_media-gplus, a.gplus {
   background-position: 0 -129px; }
 
 .social_media-twitter-h, a.twitter:hover {
@@ -20,10 +20,10 @@
 .social_media-twitter, a.twitter {
   background-position: 0 -215px; }
 
-.social_media-youtube-h {
+.social_media-youtube-h, a.youtube:hover {
   background-position: 0 -258px; }
 
-.social_media-youtube {
+.social_media-youtube, a.youtube {
   background-position: 0 -301px; }
 
 a.social-button {
@@ -35,5 +35,12 @@ a.twitter {
   text-indent: -9999px;
   width: 56px; }
 
+a.facebook {
+  text-indent: -9999px; }
+
+a.gplus {
+  text-indent: -9999px; }
+
 a.youtube {
+  text-indent: -9999px;
   width: 62px; }

@@ -38,11 +38,11 @@
   -webkit-border-#{$side}-radius: $radius;
 }
 
-@mixin social-media-button($regularClass, $hoverClass) {
-  @extend #{$regularClass};
+@mixin social-media-button($spriteName) {
+  @extend .social_media-#{$spriteName};
   text-indent: -9999px;
 
   &:hover {
-    @extend #{$hoverClass};
+    @extend .social_media-#{$spriteName}-h;
   }
 }

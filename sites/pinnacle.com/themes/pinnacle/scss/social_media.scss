@@ -12,19 +12,19 @@ a.social-button {
 }
 
 a.twitter {
-	@include social-media-button(".social_media-twitter", ".social_media-twitter-h");
+	@include social-media-button(twitter);
 	width: 56px;
 }
 
 a.facebook {
-
+	@include social-media-button(fbook);
 }
 
 a.gplus {
-
+	@include social-media-button(gplus);
 }
 
 a.youtube {
-
+	@include social-media-button(youtube);
 	width: 62px;
 }
