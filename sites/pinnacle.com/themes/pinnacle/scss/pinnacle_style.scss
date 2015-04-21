@@ -26,16 +26,15 @@
                 @include rounded-corners (3px);
                 display: block;
                 padding: 10px 0;
-                width: 100%;
                 text-align: center;
     	}
-	
+
 	.region {
 		position: relative;
 		/*box-shadow: 0 0 5px #646464;*/
 		@include single-box-shadow(0, 0, 5px, null, #646464, null);
 		@include rounded-corners (3px);
-		
+
 
 		.block {
 			position: static;
@@ -48,7 +47,7 @@
 				line-height: 1.5em;
   				margin-bottom: 15px;
   				font-size: 21px;
-				@include single-text-shadow(1px, 2px, 4px, false, #555555);	
+				@include single-text-shadow(1px, 2px, 4px, false, #555555);
 			}
 		}
 	}
@@ -74,7 +73,7 @@
 
 		a.learnmore-button {
 			background: #11BAEA;
-		}	
+		}
 	}
 }
 
