@@ -6,25 +6,24 @@
 
 a.social-button {
 	float: left;
-
 	height: 43px;
 	width: 55px;
 }
 
-a.twitter {
+a.twitter-button {
 	@include social-media-button(twitter);
 	width: 56px;
 }
 
-a.facebook {
+a.facebook-button {
 	@include social-media-button(fbook);
 }
 
-a.gplus {
+a.gplus-button {
 	@include social-media-button(gplus);
 }
 
-a.youtube {
+a.youtube-button {
 	@include social-media-button(youtube);
 	width: 62px;
 }
