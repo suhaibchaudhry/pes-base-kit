@@ -18,6 +18,10 @@
   #zone-branding .region-menu .primary-menu {
     float: right; }
 
+/*Content*/
+#zone-content {
+  background: #fff; }
+
 /*Info Blocks*/
 #zone-postscript2 a.learnmore-button {
   color: #fff;

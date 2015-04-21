@@ -1,11 +1,1 @@
-/* This file will hold styles that are loaded using the same media query as the normal grid. */
-/* If you are using the default media queries provided by Omega, these styles will also
- *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
-#zone-postscript2 a.learnmore-button {
-  position: absolute;
-  right: 22px;
-  bottom: 21px;
-  display: inline;
-  padding: 5px 15px; }
-#zone-postscript2 .region .block {
-  padding: 10px 40px 55px; }
+#zone-postscript2 a.learnmore-button{position:absolute;right:22px;bottom:21px;display:inline;padding:5px 15px}#zone-postscript2 .region .block{padding:10px 40px 55px}
