@@ -70,6 +70,14 @@ css[pinnacle_style.css][description] = This file holds all the globally active c
 css[pinnacle_style.css][options][weight] = 12
 settings[alpha_css][pinnacle_style.css] = 'pinnacle_style.css'
 
+; SOCIAL MEDIA STYLESHEET
+
+css[social_media.css][name] = Social media button classes.
+css[social_media.css][description] = This file holds all the social media button classes for links.
+css[social_media.css][options][weight] = 12
+settings[alpha_css][social_media.css] = 'social_media.css'
+
+
 ; OPTIONAL LIBRARIES
 libraries[pinnacle_custom][name] = Custom Theme JS
 libraries[pinnacle_custom][description] = This file holds all the custom JS.
