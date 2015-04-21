@@ -1,4 +1,8 @@
 @import "_mixins.scss";
+@import "compass/utilities/sprites";
+@import "social_media/*.png";
+
+@include all-social_media-sprites;
 
 a.social-button {
 	float: left;
@@ -8,19 +12,19 @@ a.social-button {
 }
 
 a.twitter {
-	@include social-media-button(twitter);
+	@include social-media-button(".social_media-twitter", ".social_media-twitter-h");
 	width: 56px;
 }
 
 a.facebook {
-	@include social-media-button(fbook);
+
 }
 
 a.gplus {
-	@include social-media-button(gplus);
+
 }
 
 a.youtube {
-	@include social-media-button(youtube);
+
 	width: 62px;
 }
