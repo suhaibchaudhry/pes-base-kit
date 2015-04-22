@@ -7,5 +7,7 @@
   bottom: 21px;
   display: inline;
   padding: 5px 15px; }
-#zone-postscript2 .region .block {
-  padding: 10px 40px 55px; }
+#zone-postscript2 .region {
+  margin-bottom: 0; }
+  #zone-postscript2 .region .block {
+    padding: 10px 40px 55px; }
