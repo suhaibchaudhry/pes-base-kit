@@ -37,12 +37,3 @@
   -moz-border-radius-#{$side}: $radius;
   -webkit-border-#{$side}-radius: $radius;
 }
-
-@mixin social-media-button($spriteName) {
-  @extend .social_media-#{$spriteName};
-  text-indent: -9999px;
-
-  &:hover {
-    @extend .social_media-#{$spriteName}-h;
-  }
-}
