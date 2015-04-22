@@ -1,38 +1,46 @@
-.social_media-sprite, a.twitter-button, a.twitter-button:hover, a.facebook-button, a.facebook-button:hover, a.gplus-button, a.gplus-button:hover, a.youtube-button, a.youtube-button:hover {
-  background-image: url('../images/social_media-s8dd9f8b236.png');
+.social_media-sprite, div.email-icon, div.phone-icon, a.twitter-button, a.twitter-button:hover, a.facebook-button, a.facebook-button:hover, a.gplus-button, a.gplus-button:hover, a.youtube-button, a.youtube-button:hover {
+  background-image: url('../images/social_media-sad2ec72eb2.png');
   background-repeat: no-repeat; }
+
+div.email-icon {
+  background-position: 0 0;
+  padding: 0 0 0 38px; }
+
+div.phone-icon {
+  background-position: 0 -217px;
+  padding: 0 0 0 37px; }
 
 a.social-button {
   float: left; }
 
 a.twitter-button {
-  background-position: 0 -215px;
+  background-position: 0 -305px;
   height: 43px;
   width: 56px;
   text-indent: -9999px; }
   a.twitter-button:hover {
-    background-position: 0 -172px; }
+    background-position: 0 -262px; }
 
 a.facebook-button {
-  background-position: 0 -43px;
+  background-position: 0 -88px;
   height: 43px;
   width: 55px;
   text-indent: -9999px; }
   a.facebook-button:hover {
-    background-position: 0 0; }
+    background-position: 0 -45px; }
 
 a.gplus-button {
-  background-position: 0 -129px;
+  background-position: 0 -174px;
   height: 43px;
   width: 55px;
   text-indent: -9999px; }
   a.gplus-button:hover {
-    background-position: 0 -86px; }
+    background-position: 0 -131px; }
 
 a.youtube-button {
-  background-position: 0 -301px;
+  background-position: 0 -391px;
   height: 43px;
   width: 62px;
   text-indent: -9999px; }
   a.youtube-button:hover {
-    background-position: 0 -258px; }
+    background-position: 0 -348px; }

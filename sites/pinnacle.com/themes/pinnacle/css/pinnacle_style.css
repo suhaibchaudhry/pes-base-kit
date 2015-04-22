@@ -10,9 +10,15 @@
 /*Header*/
 #zone-user-wrapper {
   height: 45px;
-  background: #11BAEA; }
-  #zone-user-wrapper .region-user-second p {
-    text-align: right; }
+  background: #11BAEA;
+  line-height: 45px; }
+  #zone-user-wrapper .region-user-second {
+    background: #11BAEA; }
+    #zone-user-wrapper .region-user-second div {
+      float: right;
+      color: #fff;
+      font-weight: bold;
+      margin: 0 10px 0 0; }
 
 #zone-branding .region-menu {
   margin: 45px 0 0; }
