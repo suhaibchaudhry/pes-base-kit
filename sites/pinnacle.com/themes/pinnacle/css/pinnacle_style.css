@@ -6,6 +6,7 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
 @import url(//fonts.googleapis.com/css?family=Gentium+Basic:400,700);
 */
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400);
 /* End Variables & Mixins */
 /*Header*/
 #zone-user-wrapper {
@@ -77,5 +78,25 @@
     background: #11BAEA; }
 
 /*Testimonials*/
+#zone-postscript-wrapper {
+  background: url(../images/testimonials-bg.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat; }
+  #zone-postscript-wrapper .node-teaser {
+    font-family: 'Open Sans';
+    color: #fff;
+    font-style: italic;
+    font-size: 200%;
+    border: none; }
+    #zone-postscript-wrapper .node-teaser .field-name-field-author {
+      float: right; }
+      #zone-postscript-wrapper .node-teaser .field-name-field-author .field-item:before {
+        content: '- '; }
+
+.front-testimonials hr {
+  background: #fff;
+  margin: 0 25%;
+  height: 2px; }
 .front-testimonials .views-row-last hr {
   display: none; }

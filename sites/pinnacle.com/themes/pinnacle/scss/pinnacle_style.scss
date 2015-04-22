@@ -6,6 +6,8 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 @import "compass/css3";
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400);
 /* End Variables & Mixins */
 
 /*Header*/
@@ -103,7 +105,36 @@
 }
 
 /*Testimonials*/
+#zone-postscript-wrapper {
+	background: url(../images/testimonials-bg.jpg);
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+
+	.node-teaser {
+		font-family: 'Open Sans';
+		color: #fff;
+		font-style: italic;
+		font-size: 200%;
+		border: none;
+
+		.field-name-field-author {
+			float: right;
+
+			.field-item:before {
+				content: '- ';
+			}
+		}
+	}
+}
+
 .front-testimonials {
+	hr {
+		background: #fff;
+		margin: 0 25%;
+		height: 2px;
+	}
+
 	.views-row-last {
 		hr {
 			display: none;
