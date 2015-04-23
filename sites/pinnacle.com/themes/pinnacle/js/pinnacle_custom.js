@@ -19,7 +19,7 @@
 			//that.$zoneWrap.css({backgroundPosition: 'center top'});
 
 			//If all images have a dimension in their tag then we don't have to wait for the load event. But since the logo image doesn't we do.
-			this.$document.bind('responsivelayout load resize', function(e, d) {
+			this.$window.bind('responsivelayout load resize', function(e, d) {
 				/*if(d.to == 'wide') { //|| d.to == 'normal') {
 					that.$window.bind("load resize scroll", callback);
 				} else {
