@@ -18,6 +18,11 @@
 			that.$window.bind("scroll", callback);
 			that.$window.bind('load resize', dcallback);
 
+			//Turn off cover background sizing for all browsers besides webkit because ratio calculation with cover does not work in gecko.
+			if( navigator.userAgent.toLowerCase().indexOf('firefox') > -1 ) {
+				this.$zoneWrap.css({backgroundSize: 'initial'});
+			}
+
 			//If all images have a dimension in their tag then we don't have to wait for the load event. But since the logo image doesn't we do.
 			this.$window.bind('responsivelayout', function(e, d) {
 				if(d.to == 'mobile') { //|| d.to == 'normal') {

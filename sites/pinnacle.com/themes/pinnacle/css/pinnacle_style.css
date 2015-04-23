@@ -33,7 +33,7 @@
     background-color: #fff;
     color: #000;
     border-radius: 0; }
-    #zone-branding .region-menu .main-menu a:active, #zone-branding .region-menu .main-menu a:hover {
+    #zone-branding .region-menu .main-menu a.active {
       text-decoration: none;
       border-bottom: 3px solid #11BAEA; }
   #zone-branding .region-menu .menu-356 a {
