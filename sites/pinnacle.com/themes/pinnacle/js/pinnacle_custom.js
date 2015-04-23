@@ -10,15 +10,17 @@
 			var callback = this.contextualize(this.scrollHandler, this);
 			var that = this;
 
+			that.$window.bind("load resize scroll", callback);
+
 			//If all images have a dimension in their tag then we don't have to wait for the load event. But since the logo image doesn't we do.
 			this.$document.bind('responsivelayout', function(e, d) {
-				if(d.to == 'wide'/* || d.to == 'normal'*/) {
+				/*if(d.to == 'wide') { //|| d.to == 'normal') {
 					that.$window.bind("load resize scroll", callback);
 				} else {
 					that.$window.unbind("load resize scroll", callback);
 					that.$zoneWrap.css({backgroundPosition: 'center top'});	
-				}
-
+				}*/
+				that.$zoneWrap.css({backgroundPosition: 'center top'});
 				that.getBgDimensions(that.$zoneWrap);
 			});
 
