@@ -2,7 +2,7 @@
   // Handle user toolbar when user is admin and have admin toolbar enabled.
   Drupal.behaviors.pinnacle_parallax = {
   	attach: function(context, settings) {
-		this.max_image_position = 200;
+		this.max_image_position = 350;
 		if(this.firstLoad) {
 			this.$window = $(window);
 			this.$document = $(document);
