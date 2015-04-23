@@ -1,3 +1,7 @@
+/*******
+* Author: 
+*
+********/
 (function ($) {
   // Handle user toolbar when user is admin and have admin toolbar enabled.
   Drupal.behaviors.pinnacle_parallax = {
@@ -10,17 +14,18 @@
 			var callback = this.contextualize(this.scrollHandler, this);
 			var that = this;
 
-			that.$window.bind("load resize scroll", callback);
+			that.$window.bind("scroll", callback);
+
+			//that.$zoneWrap.css({backgroundPosition: 'center top'});
 
 			//If all images have a dimension in their tag then we don't have to wait for the load event. But since the logo image doesn't we do.
-			this.$document.bind('responsivelayout', function(e, d) {
+			this.$document.bind('responsivelayout load resize', function(e, d) {
 				/*if(d.to == 'wide') { //|| d.to == 'normal') {
 					that.$window.bind("load resize scroll", callback);
 				} else {
 					that.$window.unbind("load resize scroll", callback);
 					that.$zoneWrap.css({backgroundPosition: 'center top'});	
 				}*/
-				that.$zoneWrap.css({backgroundPosition: 'center top'});
 				that.getBgDimensions(that.$zoneWrap);
 			});
 
@@ -80,8 +85,9 @@
 		            var bgH = div.offsetWidth;
 		        }
 		    }
-		    console.log(bgW + ", " + bgH);
+		    //console.log(bgW + ", " + bgH);
 		    that.max_image_position = bgH-zone.height();
+		    that.$window.trigger("scroll");
 		}
   	}
   }
