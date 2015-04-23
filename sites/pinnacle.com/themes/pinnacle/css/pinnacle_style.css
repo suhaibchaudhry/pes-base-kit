@@ -122,7 +122,9 @@
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
-    flex-direction: row; }
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center; }
   #zone-footer-wrapper .front-sponsors .views-row {
     margin-right: 10px; }
   #zone-footer-wrapper .front-sponsors .views-row-last {
