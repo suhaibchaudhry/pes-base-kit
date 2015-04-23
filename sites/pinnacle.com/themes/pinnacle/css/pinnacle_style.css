@@ -106,7 +106,8 @@
     font-size: 200%;
     border: none; }
     #zone-postscript-wrapper .node-teaser .field-name-field-author {
-      float: right; }
+      float: right;
+      font-weight: bold; }
       #zone-postscript-wrapper .node-teaser .field-name-field-author .field-item:before {
         content: '- '; }
 
