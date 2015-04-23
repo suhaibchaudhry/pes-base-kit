@@ -11,3 +11,6 @@
   margin-bottom: 0; }
   #zone-postscript2 .region .block {
     padding: 10px 40px 55px; }
+
+#zone-branding .region-menu .primary-menu {
+  float: right; }

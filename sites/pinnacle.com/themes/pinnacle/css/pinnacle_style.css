@@ -23,8 +23,6 @@
 
 #zone-branding .region-menu {
   margin: 45px 0 0; }
-  #zone-branding .region-menu .primary-menu {
-    float: right; }
 
 /*Content*/
 #zone-content {
@@ -100,3 +98,16 @@
   height: 2px; }
 .front-testimonials .views-row-last hr {
   display: none; }
+
+/*Sponsors*/
+#zone-footer-wrapper {
+  background: #fff; }
+  #zone-footer-wrapper .front-sponsors .view-content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row; }
+  #zone-footer-wrapper .front-sponsors .views-row {
+    margin-right: 10px; }
+  #zone-footer-wrapper .front-sponsors .views-row-last {
+    margin-right: 0; }
