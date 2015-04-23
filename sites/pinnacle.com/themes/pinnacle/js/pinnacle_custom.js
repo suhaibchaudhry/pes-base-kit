@@ -44,8 +44,12 @@
 	},
 	firstLoad: true,
 	scrollHandler: function(e) {
-		if(this.$window.scrollTop()+this.$window.height() > this.$zoneWrap.offset().top) {
-			var factor = this.max_image_position-(((this.$document.height()-this.$window.scrollTop()-this.$window.height())/(this.$document.height()-this.$window.height()))*this.max_image_position);
+		var scrollTop = this.$window.scrollTop();
+		var windowHeight = this.$window.height();
+		var documentHeight = this.$document.height();
+
+		if(scrollTop+windowHeight > this.$zoneWrap.offset().top) {
+			var factor = this.max_image_position-(((documentHeight-scrollTop-windowHeight)/(documentHeight-windowHeight))*this.max_image_position);
 			if(factor > 0) {
 				this.$zoneWrap.css({backgroundPosition: 'center -'+factor+'px'});
 			}
