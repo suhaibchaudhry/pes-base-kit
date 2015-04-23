@@ -12,25 +12,30 @@
 			this.$document = $(document);
 			this.$zoneWrap = $('#zone-postscript-wrapper', context);
 			var callback = this.contextualize(this.scrollHandler, this);
+			var dcallback = this.contextualize(this.triggerDimensions, this);
 			var that = this;
 
 			that.$window.bind("scroll", callback);
-
-			//that.$zoneWrap.css({backgroundPosition: 'center top'});
+			that.$window.bind('load resize', dcallback);
 
 			//If all images have a dimension in their tag then we don't have to wait for the load event. But since the logo image doesn't we do.
-			this.$window.bind('responsivelayout load resize', function(e, d) {
-				/*if(d.to == 'wide') { //|| d.to == 'normal') {
-					that.$window.bind("load resize scroll", callback);
+			this.$window.bind('responsivelayout', function(e, d) {
+				if(d.to == 'mobile') { //|| d.to == 'normal') {
+					that.$window.unbind("scroll", callback);
+					that.$window.unbind('load resize', dcallback);
+					that.$zoneWrap.css({backgroundPosition: 'center top'});
 				} else {
-					that.$window.unbind("load resize scroll", callback);
-					that.$zoneWrap.css({backgroundPosition: 'center top'});	
-				}*/
-				that.getBgDimensions(that.$zoneWrap);
+					that.$window.bind("scroll", callback);
+					that.$window.bind('load resize', dcallback);
+					that.getBgDimensions(that.$zoneWrap);
+				}
 			});
 
 			this.firstLoad = false;
 		}
+	},
+	triggerDimensions: function(e) {
+		this.getBgDimensions(this.$zoneWrap);
 	},
 	firstLoad: true,
 	scrollHandler: function(e) {
