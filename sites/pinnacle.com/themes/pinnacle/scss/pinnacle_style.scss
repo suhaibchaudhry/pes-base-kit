@@ -169,6 +169,7 @@
 		.view-content {
 			@include display-flex;
 			@include flex-direction(row);
+			@include justify-content(center);
 		}	
 
 		.views-row {
