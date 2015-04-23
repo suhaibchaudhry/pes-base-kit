@@ -37,19 +37,26 @@
 	.region-menu {
 		margin: 45px 0 0;
 	
-		.main-menu a {
-			text-transform: lowercase;
-			border-color: #fff;
-			background-color: #fff;
-			color: #000;
-			border-radius: 0;
+		.main-menu { 
+			a {
+				text-transform: lowercase;
+				border-color: #fff;
+				background-color: #fff;
+				color: #000;
+				border-radius: 0;
 
-			&.active {
-				text-decoration: none;
-				border-bottom: 3px solid #11BAEA;
+				&.active, &:hover {
+					text-decoration: none;
+					border-bottom: 3px solid #11BAEA;
+				}
 			}
-		}
+			
+			li {
+				margin-right: 0;
+			}
 
+		}
+		
 		.menu-356 a {
 			text-transform: lowercase;
 			color: #D50606;
