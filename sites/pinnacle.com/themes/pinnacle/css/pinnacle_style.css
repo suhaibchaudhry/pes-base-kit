@@ -8,6 +8,10 @@
 */
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400);
 /* End Variables & Mixins */
+/*HTML*/
+.html {
+  background: #fff; }
+
 /*Header*/
 #zone-user-wrapper {
   height: 45px;
@@ -23,6 +27,18 @@
 
 #zone-branding .region-menu {
   margin: 45px 0 0; }
+  #zone-branding .region-menu .main-menu a {
+    text-transform: lowercase;
+    border-color: #fff;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0; }
+    #zone-branding .region-menu .main-menu a:active, #zone-branding .region-menu .main-menu a:hover {
+      text-decoration: none;
+      border-bottom: 3px solid #11BAEA; }
+  #zone-branding .region-menu .menu-356 a {
+    text-transform: lowercase;
+    color: #D50606; }
 
 /*Content*/
 #zone-content {
