@@ -7,6 +7,8 @@
   Drupal.behaviors.pinnacle_parallax = {
   	attach: function(context, settings) {
 		this.max_image_position = 350;
+		this.max_image_pos = [];
+
 		if(this.firstLoad) {
 			this.$window = $(window);
 			this.$document = $(document);
@@ -14,6 +16,7 @@
 			var callback = this.contextualize(this.scrollHandler, this);
 			var dcallback = this.contextualize(this.triggerDimensions, this);
 			var that = this;
+			this.$zoneWrap.each(function() {that.max_image_pos.push(that.max_image_position)});
 
 			that.$window.bind("scroll", callback);
 			that.$window.bind('load resize', dcallback);
@@ -44,16 +47,20 @@
 	},
 	firstLoad: true,
 	scrollHandler: function(e) {
+		var that = this;
 		var scrollTop = this.$window.scrollTop();
 		var windowHeight = this.$window.outerHeight();
 		var documentHeight = this.$document.outerHeight();
 
-		if(scrollTop+windowHeight > this.$zoneWrap.offset().top) {
-			var factor = this.max_image_position-(((documentHeight-scrollTop-windowHeight)/(documentHeight-windowHeight))*this.max_image_position);
-			if(factor > 0) {
-				this.$zoneWrap.css({backgroundPosition: 'center -'+factor+'px'});
+		this.$zoneWrap.each(function(i, e) {
+			var zoneWrap = $(e);
+			if(scrollTop+windowHeight > zoneWrap.offset().top) {
+				var factor = that.max_image_pos[i]-(((documentHeight-scrollTop-windowHeight)/(documentHeight-windowHeight))*that.max_image_pos[i]);
+				if(factor > 0) {
+					zoneWrap.css({backgroundPosition: 'center -'+factor+'px'});
+				}
 			}
-		}
+		});
 	},
 	contextualize: function(method, context) {
 		return function() {			
@@ -64,7 +71,8 @@
 	//Stackoverflow: Question: http://stackoverflow.com/questions/23518501/retrieve-the-size-of-a-background-image-set-to-cover
   	getBgDimensions: function(zone) {
   		var that = this;
- 		var div = zone.get(0);
+		zone.each(function(i, e) {
+ 		var div = zone.get(i);
 		var style = div.currentStyle || window.getComputedStyle(div, false);
 		var bg = style.backgroundImage.slice(4, -1);
 
@@ -100,9 +108,27 @@
 		        }
 		    }
 		    //console.log(bgW + ", " + bgH);
-		    that.max_image_position = bgH-zone.height();
-		    that.$window.trigger("scroll");
+		    that.max_image_pos[i] = bgH-zone.height();
+		    that.debounce(function() {
+		    	that.$window.trigger("scroll");
+		    }, 300, false);
 		}
-  	}
+		});
+  	},
+	//SOURCE: https://gist.github.com/steveosoule/8c98a41d20bb77ae62f7
+	debounce: function(func, wait, immediate) {
+		var timeout;
+		return function() {
+			var context = this, args = arguments;
+			var later = function() {
+				timeout = null;
+				if (!immediate) func.apply(context, args);
+			};
+			var callNow = immediate && !timeout;
+			clearTimeout(timeout);
+			timeout = setTimeout(later, wait);
+			if (callNow) func.apply(context, args);
+		};
+	}
   }
 })(jQuery);
