@@ -45,8 +45,8 @@
 	firstLoad: true,
 	scrollHandler: function(e) {
 		var scrollTop = this.$window.scrollTop();
-		var windowHeight = this.$window.height();
-		var documentHeight = this.$document.height();
+		var windowHeight = this.$window.outerHeight();
+		var documentHeight = this.$document.outerHeight();
 
 		if(scrollTop+windowHeight > this.$zoneWrap.offset().top) {
 			var factor = this.max_image_position-(((documentHeight-scrollTop-windowHeight)/(documentHeight-windowHeight))*this.max_image_position);
