@@ -43,6 +43,14 @@
     color: #D50606; }
 
 /*Content*/
+#zone-preface-wrapper {
+  background: url(../images/locations-bg.jpg) no-repeat;
+  background-size: cover; }
+  #zone-preface-wrapper .zone-preface {
+    background: none; }
+  #zone-preface-wrapper .form-item input {
+    width: 50%; }
+
 #zone-content {
   background: #fff; }
 

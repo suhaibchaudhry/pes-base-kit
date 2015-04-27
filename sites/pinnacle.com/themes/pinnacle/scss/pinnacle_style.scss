@@ -65,6 +65,19 @@
 }
 
 /*Content*/
+#zone-preface-wrapper {
+	background: url(../images/locations-bg.jpg) no-repeat;
+	background-size: cover;
+
+	.zone-preface {
+		background: none;
+	}
+
+	.form-item input {
+		width: 50%;
+	}
+}
+
 #zone-content {
 	background: #fff;
 }
