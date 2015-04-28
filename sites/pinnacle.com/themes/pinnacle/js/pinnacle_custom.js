@@ -42,8 +42,7 @@
 			this.firstLoad = false;
 		}
 	},
-	triggerScrollEvent: function() {
-		console.log('Artificial Trigger');
+	triggerScrollEvent: function() {	
 		this.$window.trigger("scroll");
 	},
 	triggerDimensions: function(e) {
@@ -65,13 +64,6 @@
 				}
 			}
 		});
-		
-		console.log('Before debounce');
-		that.debounce(function() {
-			console.log('After debounce');
-                        that.triggerScrollEvent();
-                }, 300, false);
-
 	},
 	contextualize: function(method, context) {
 		return function() {			
@@ -120,27 +112,9 @@
 		    }
 		    //console.log(bgW + ", " + bgH);
 		    that.max_image_pos[i] = bgH-zone.height();
-
-		    that.debounce(function() {
-			that.triggerScrollEvent();
-		    }, 1000, false);
+		    that.triggerScrollEvent();
 		}
 		});
   	},
-	//SOURCE: https://gist.github.com/steveosoule/8c98a41d20bb77ae62f7
-	debounce: function(func, wait, immediate) {
-		var timeout;
-		return function() {
-			var context = this, args = arguments;
-			var later = function() {
-				timeout = null;
-				if (!immediate) func.apply(context, args);
-			};
-			var callNow = immediate && !timeout;
-			clearTimeout(timeout);
-			timeout = setTimeout(later, wait);
-			if (callNow) func.apply(context, args);
-		};
-	}
-  }
+ }
 })(jQuery);
