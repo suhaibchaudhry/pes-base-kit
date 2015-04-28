@@ -20,6 +20,7 @@
 	height: 45px;
 	background: #11BAEA;
 	line-height: 45px;
+	@include single-box-shadow(0, 0, 10px, null, #181818, null);
 
 	.region-user-second {
 		background: #11BAEA;
@@ -33,33 +34,38 @@
 	}
 }
 
-#zone-branding {
-	.region-menu {
-		margin: 45px 0 0;
-	
-		.main-menu { 
-			a {
-				text-transform: lowercase;
-				border-color: #fff;
-				background-color: #fff;
-				color: #000;
-				border-radius: 0;
+#zone-branding-wrapper {
+	position: relative;
+	@include single-box-shadow(0, 0, 20px, null, #505050, null);
 
-				&.active, &:hover {
-					text-decoration: none;
-					border-bottom: 3px solid #11BAEA;
+	#zone-branding {
+		.region-menu {
+			margin: 45px 0 0;
+		
+			.main-menu { 
+				a {
+					text-transform: lowercase;
+					border-color: #fff;
+					background-color: #fff;
+					color: #000;
+					border-radius: 0;
+
+					&.active, &:hover {
+						text-decoration: none;
+						border-bottom: 3px solid #11BAEA;
+					}
 				}
+				
+				li {
+					margin-right: 0;
+				}
+
 			}
 			
-			li {
-				margin-right: 0;
+			.menu-356 a {
+				text-transform: lowercase;
+				color: #D50606;
 			}
-
-		}
-		
-		.menu-356 a {
-			text-transform: lowercase;
-			color: #D50606;
 		}
 	}
 }
