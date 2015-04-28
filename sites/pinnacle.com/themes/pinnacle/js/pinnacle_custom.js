@@ -57,7 +57,7 @@
 
 		this.$zoneWrap.each(function(i, e) {
 			var zoneWrap = $(e);
-			if(scrollTop+windowHeight > zoneWrap.offset().top) {
+			if(scrollTop+windowHeight >= zoneWrap.offset().top) {
 				var factor = that.max_image_pos[i]-(((documentHeight-scrollTop-windowHeight)/(documentHeight-windowHeight))*that.max_image_pos[i]);
 				if(factor > 0) {
 					zoneWrap.css({backgroundPosition: 'center -'+factor+'px'});
