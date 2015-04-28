@@ -1,6 +1,7 @@
 /******************************
 *     Author: Asad Hasan      *
 *******************************/
+
 (function ($) {
   // Handle user toolbar when user is admin and have admin toolbar enabled.
   Drupal.behaviors.pinnacle_parallax = {
@@ -41,6 +42,10 @@
 			this.firstLoad = false;
 		}
 	},
+	triggerScrollEvent: function() {
+		console.log('Artificial Trigger');
+		this.$window.trigger("scroll");
+	},
 	triggerDimensions: function(e) {
 		this.getBgDimensions(this.$zoneWrap);
 	},
@@ -60,6 +65,13 @@
 				}
 			}
 		});
+		
+		console.log('Before debounce');
+		that.debounce(function() {
+			console.log('After debounce');
+                        that.triggerScrollEvent();
+                }, 300, false);
+
 	},
 	contextualize: function(method, context) {
 		return function() {			
@@ -108,9 +120,10 @@
 		    }
 		    //console.log(bgW + ", " + bgH);
 		    that.max_image_pos[i] = bgH-zone.height();
+
 		    that.debounce(function() {
-		    	that.$window.trigger("scroll");
-		    }, 300);
+			that.triggerScrollEvent();
+		    }, 1000, false);
 		}
 		});
   	},
