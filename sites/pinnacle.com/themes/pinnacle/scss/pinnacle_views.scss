@@ -1,0 +1,41 @@
+// Stylesheet for custom views.
+
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "compass/css3";
+
+.block-views-exp-location-page {
+	.form-item input {
+		width: 50%;
+	}		
+}
+
+.front-testimonials {
+	hr {
+		background: #fff;
+		margin: 0 25%;
+		height: 2px;
+	}
+
+	.views-row-last {
+		hr {
+			display: none;
+		}
+	}
+}
+
+.front-sponsors {
+	.view-content {
+		@include display-flex;
+		@include flex-direction(row);
+		@include justify-content(center);
+	}	
+
+	.views-row {
+		margin-right: 10px;
+	}
+
+	.views-row-last {
+		margin-right: 0;
+	}
+}

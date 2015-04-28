@@ -1,0 +1,25 @@
+/*
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
+@import url(//fonts.googleapis.com/css?family=Gentium+Basic:400,700);
+*/
+.block-views-exp-location-page .form-item input {
+  width: 50%; }
+
+.front-testimonials hr {
+  background: #fff;
+  margin: 0 25%;
+  height: 2px; }
+.front-testimonials .views-row-last hr {
+  display: none; }
+
+.front-sponsors .view-content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center; }
+.front-sponsors .views-row {
+  margin-right: 10px; }
+.front-sponsors .views-row-last {
+  margin-right: 0; }

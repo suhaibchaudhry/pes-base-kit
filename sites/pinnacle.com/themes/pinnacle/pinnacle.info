@@ -67,16 +67,22 @@ zones[postscript2] = Postscript 2
 
 css[pinnacle_style.css][name] = Pinnacle theme global style
 css[pinnacle_style.css][description] = This file holds all the globally active custom CSS of Pinnacle theme.
-css[pinnacle_style.css][options][weight] = 12
+css[pinnacle_style.css][options][weight] = 14
 settings[alpha_css][pinnacle_style.css] = 'pinnacle_style.css'
 
 ; SOCIAL MEDIA STYLESHEET
 
 css[social_media.css][name] = Social media button classes
 css[social_media.css][description] = This file holds all the social media button classes for links.
-css[social_media.css][options][weight] = 12
+css[social_media.css][options][weight] = 15
 settings[alpha_css][social_media.css] = 'social_media.css'
 
+; CUSTOM VIEW STYLESHEET
+
+css[pinnacle_views.css][name] = Views stylesheet
+css[pinnacle_views.css][description] = Stylesheet for custom views.
+css[pinnacle_views.css][options][weight] = 13
+settings[alpha_css][pinnacle_views.css] = 'pinnacle_views.css'
 
 ; OPTIONAL LIBRARIES
 libraries[pinnacle_custom][name] = Custom Theme JS
