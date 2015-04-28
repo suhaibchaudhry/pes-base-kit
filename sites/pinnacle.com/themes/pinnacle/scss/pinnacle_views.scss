@@ -13,8 +13,16 @@
 		@include alpha-background-color(rgba(17, 186, 234, 0.86), #11BAEA);
 		@include box-sizing(border-box);
 		
-		&:nth-child(3), &:nth-child(4), #edit-field-location-patient-settings-tid-wrapper, #edit-field-location-max-exposure-tid-wrapper {
+		&:nth-child(3), &:nth-child(4), &#edit-field-location-patient-settings-tid-wrapper, &#edit-field-location-max-exposure-tid-wrapper {
 			@include alpha-background-color(rgba(68, 68, 68, 0.94), #444444);
+		}
+
+		&:first-child, &#edit-field-location-specialty-tid-wrapper {
+			@include rounded-corners(2px 2px 0 0);
+		}
+
+		&:last-child, &.views-submit-button {
+			@include rounded-corners(0 0 2px 2px);
 		}
 
 		label {
