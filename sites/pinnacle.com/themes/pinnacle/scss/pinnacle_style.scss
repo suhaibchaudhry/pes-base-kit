@@ -170,7 +170,7 @@
 }
 
 #zone-postscript-wrapper, #zone-preface-wrapper {	
-	@include single-transition(background, 500ms, cubic-bezier(0.190, 1.000, 0.220, 1.000), 0ms);
+	@include single-transition(background, 2s, cubic-bezier(0.075, 0.820, 0.165, 1.000), 0ms);
 }
 
 .front-testimonials {
