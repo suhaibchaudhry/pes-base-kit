@@ -20,7 +20,7 @@
 	height: 45px;
 	background: #11BAEA;
 	line-height: 45px;
-	@include single-box-shadow(0, 0, 10px, null, #181818, null);
+	//@include single-box-shadow(0, 0, 10px, null, #181818, null);
 
 	.region-user-second {
 		background: #11BAEA;
@@ -34,10 +34,14 @@
 	}
 }
 
-#zone-branding-wrapper {
-	position: relative;
-	@include single-box-shadow(0, 0, 20px, null, #505050, null);
+body.front {
+	#zone-branding-wrapper {
+		position: relative;
+		@include single-box-shadow(0, 0, 20px, null, #505050, null);
+	}
+}
 
+#zone-branding-wrapper {
 	#zone-branding {
 		.region-menu {
 			margin: 45px 0 0;

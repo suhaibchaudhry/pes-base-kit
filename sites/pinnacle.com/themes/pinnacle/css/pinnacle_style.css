@@ -16,10 +16,7 @@
 #zone-user-wrapper {
   height: 45px;
   background: #11BAEA;
-  line-height: 45px;
-  -moz-box-shadow: 0 0 10px #181818;
-  -webkit-box-shadow: 0 0 10px #181818;
-  box-shadow: 0 0 10px #181818; }
+  line-height: 45px; }
   #zone-user-wrapper .region-user-second {
     background: #11BAEA; }
     #zone-user-wrapper .region-user-second div {
@@ -28,27 +25,28 @@
       font-weight: bold;
       margin: 0 10px 0 0; }
 
-#zone-branding-wrapper {
+body.front #zone-branding-wrapper {
   position: relative;
   -moz-box-shadow: 0 0 20px #505050;
   -webkit-box-shadow: 0 0 20px #505050;
   box-shadow: 0 0 20px #505050; }
-  #zone-branding-wrapper #zone-branding .region-menu {
-    margin: 45px 0 0; }
-    #zone-branding-wrapper #zone-branding .region-menu .main-menu a {
-      text-transform: lowercase;
-      border-color: #fff;
-      background-color: #fff;
-      color: #000;
-      border-radius: 0; }
-      #zone-branding-wrapper #zone-branding .region-menu .main-menu a.active, #zone-branding-wrapper #zone-branding .region-menu .main-menu a:hover {
-        text-decoration: none;
-        border-bottom: 3px solid #11BAEA; }
-    #zone-branding-wrapper #zone-branding .region-menu .main-menu li {
-      margin-right: 0; }
-    #zone-branding-wrapper #zone-branding .region-menu .menu-356 a {
-      text-transform: lowercase;
-      color: #D50606; }
+
+#zone-branding-wrapper #zone-branding .region-menu {
+  margin: 45px 0 0; }
+  #zone-branding-wrapper #zone-branding .region-menu .main-menu a {
+    text-transform: lowercase;
+    border-color: #fff;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0; }
+    #zone-branding-wrapper #zone-branding .region-menu .main-menu a.active, #zone-branding-wrapper #zone-branding .region-menu .main-menu a:hover {
+      text-decoration: none;
+      border-bottom: 3px solid #11BAEA; }
+  #zone-branding-wrapper #zone-branding .region-menu .main-menu li {
+    margin-right: 0; }
+  #zone-branding-wrapper #zone-branding .region-menu .menu-356 a {
+    text-transform: lowercase;
+    color: #D50606; }
 
 /*Content*/
 #zone-preface-wrapper {
