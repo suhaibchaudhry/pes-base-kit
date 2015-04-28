@@ -111,7 +111,7 @@
 		        }
 		    }
 		    //console.log(bgW + ", " + bgH);
-		    that.max_image_pos[i] = bgH-zone.outterHeight();
+		    that.max_image_pos[i] = bgH-zone.outerHeight();
 		    that.triggerScrollEvent();
 		}
 		});

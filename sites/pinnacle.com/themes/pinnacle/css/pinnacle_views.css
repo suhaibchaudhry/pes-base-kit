@@ -3,8 +3,6 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
 @import url(//fonts.googleapis.com/css?family=Gentium+Basic:400,700);
 */
-#views-exposed-form-location-page .form-item input {
-  width: 50%; }
 #views-exposed-form-location-page .views-exposed-widget {
   padding: 0 15px 15px;
   width: 100%;
@@ -21,6 +19,8 @@
     color: #fff;
     text-transform: lowercase;
     font-size: 1.2em; }
+  #views-exposed-form-location-page .views-exposed-widget select, #views-exposed-form-location-page .views-exposed-widget input {
+    width: 100%; }
 
 body.page-locations .region-content h1 {
   display: none; }
