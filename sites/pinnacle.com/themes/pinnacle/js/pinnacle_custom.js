@@ -81,47 +81,54 @@
 	//Stackoverflow: Question: http://stackoverflow.com/questions/23518501/retrieve-the-size-of-a-background-image-set-to-cover
   	getBgDimensions: function(zone) {
   		var that = this;
+		var div = [];
+		var style = [];
+		var bg = [];
+		var background = [];
 		zone.each(function(i, e) {
- 		var div = zone.get(i);
-		var style = div.currentStyle || window.getComputedStyle(div, false);
-		var bg = style.backgroundImage.slice(4, -1);
+ 		div[i] = zone.get(i);
+		style[i] = div[i].currentStyle || window.getComputedStyle(div[i], false);
+		bg[i] = style[i].backgroundImage.slice(4, -1);
 
-		var background = new Image();
-		background.src = bg;
+		background[i] = new Image();
+		background[i].src = bg[i];
 
-		background.onload = function() {
-		    if (background.width > background.height) {
-		        var ratio = background.height / background.width;
-		        if (div.offsetWidth > div.offsetHeight) {
-		            var bgW = div.offsetWidth;
-		            var bgH = Math.round(div.offsetWidth * ratio);
-		            if (bgH < div.offsetHeight) {
-		                bgH = div.offsetHeight;
+		background[i].onload = function() {
+		    //console.log('W: '+background[i].width+' H: '+background[i].height);
+		    //console.log('OW: '+div[i].offsetWidth+' OH: '+div[i].offsetHeight);
+		    if (background[i].width > background[i].height) {
+		        var ratio = background[i].height / background[i].width;
+		        if (div[i].offsetWidth > div[i].offsetHeight) {
+		            var bgW = div[i].offsetWidth;
+		            var bgH = Math.round(div[i].offsetWidth * ratio);
+		            if (bgH < div[i].offsetHeight) {
+		                bgH = div[i].offsetHeight;
 		                bgW = Math.round(bgH / ratio);
 		            }
 		        } else {
-		            var bgW = Math.round(div.offsetHeight / ratio);
-		            var bgH = div.offsetHeight;
+		            var bgW = Math.round(div[i].offsetHeight / ratio);
+		            var bgH = div[i].offsetHeight;
 		        }
 		    } else {
-		        var ratio = background.width / background.height;
-		        if (div.offsetHeight > div.offsetWidth) {
-		            var bgH = div.offsetHeight;
-		            var bgW = Math.round(div.offsetHeight * ratio);
-		            if (bgW > div.offsetWidth) {
-		                bgW = div.offsetWidth;
+		        var ratio = background[i].width / background[i].height;
+		        if (div[i].offsetHeight > div[i].offsetWidth) {
+		            var bgH = div[i].offsetHeight;
+		            var bgW = Math.round(div[i].offsetHeight * ratio);
+		            if (bgW > div[i].offsetWidth) {
+		                bgW = div[i].offsetWidth;
 		                bgH = Math.round(bgW / ratio);
 		            }
 		        } else {
-		            var bgW = Math.round(div.offsetWidth / ratio);
-		            var bgH = div.offsetWidth;
+		            var bgW = Math.round(div[i].offsetWidth / ratio);
+		            var bgH = div[i].offsetWidth;
 		        }
 		    }
 		    //console.log(bgW + ", " + bgH);
-		    that.max_image_pos[i] = bgH-zone.outerHeight();
+		    that.max_image_pos[i] = bgH-zone.height();
+		    //console.log('Loading : '+i+' : Height: '+that.max_image_pos[i]);
 		    that.triggerScrollEvent();
 		}
 		});
-  	},
+  	}
  }
 })(jQuery);
