@@ -111,7 +111,7 @@
 		    that.max_image_pos[i] = bgH-zone.height();
 		    that.debounce(function() {
 		    	that.$window.trigger("scroll");
-		    }, 300, false);
+		    }, 300);
 		}
 		});
   	},
