@@ -124,7 +124,8 @@ body.front #zone-branding-wrapper {
       #zone-postscript-wrapper .node-teaser .field-name-field-author .field-item:before {
         content: '- '; }
 
-#zone-postscript-wrapper, #zone-preface-wrapper {
+/*Native BG transitions*/
+.nativeBgTransition {
   -moz-transition: background 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
   -o-transition: background 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
   -webkit-transition: background 2s cubic-bezier(0.075, 0.82, 0.165, 1);

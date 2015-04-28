@@ -177,7 +177,8 @@ body.front {
 	}
 }
 
-#zone-postscript-wrapper, #zone-preface-wrapper {	
+/*Native BG transitions*/
+.nativeBgTransition {	
 	@include single-transition(background, 2s, cubic-bezier(0.075, 0.820, 0.165, 1.000), 0ms);
 }
 
