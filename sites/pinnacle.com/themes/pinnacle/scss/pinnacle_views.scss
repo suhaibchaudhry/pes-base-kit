@@ -1,13 +1,39 @@
 // Stylesheet for custom views.
 
+/* Include Default Variables & Mixins */
 @import "_variables.scss";
 @import "_mixins.scss";
 @import "compass/css3";
 
-.block-views-exp-location-page {
+#views-exposed-form-location-page {
 	.form-item input {
 		width: 50%;
-	}		
+	}
+
+	.views-exposed-widget {
+		padding: 0 15px 15px;
+		width: 100%;
+
+		@include alpha-background-color(rgba(17, 186, 234, 0.86), #11BAEA);
+		@include box-sizing(border-box);
+		
+		&:nth-child(3), &:nth-child(4), #edit-field-location-patient-settings-tid-wrapper, #edit-field-location-max-exposure-tid-wrapper {
+			@include alpha-background-color(rgba(68, 68, 68, 0.94), #444444);
+		}
+
+		label {
+			font-weight: normal;
+			color: #fff;
+			text-transform: lowercase;
+			font-size: 1.2em;
+		}
+	}
+}
+
+body.page-locations {
+	.region-content h1 {
+		display: none;
+	}
 }
 
 .front-testimonials {

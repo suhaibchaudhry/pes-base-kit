@@ -1,9 +1,29 @@
+/* Include Default Variables & Mixins */
 /*
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
 @import url(//fonts.googleapis.com/css?family=Gentium+Basic:400,700);
 */
-.block-views-exp-location-page .form-item input {
+#views-exposed-form-location-page .form-item input {
   width: 50%; }
+#views-exposed-form-location-page .views-exposed-widget {
+  padding: 0 15px 15px;
+  width: 100%;
+  background-color: #11baea;
+  background-color: rgba(17, 186, 234, 0.86);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  #views-exposed-form-location-page .views-exposed-widget:nth-child(3), #views-exposed-form-location-page .views-exposed-widget:nth-child(4), #views-exposed-form-location-page .views-exposed-widget #edit-field-location-patient-settings-tid-wrapper, #views-exposed-form-location-page .views-exposed-widget #edit-field-location-max-exposure-tid-wrapper {
+    background-color: #444444;
+    background-color: rgba(68, 68, 68, 0.94); }
+  #views-exposed-form-location-page .views-exposed-widget label {
+    font-weight: normal;
+    color: #fff;
+    text-transform: lowercase;
+    font-size: 1.2em; }
+
+body.page-locations .region-content h1 {
+  display: none; }
 
 .front-testimonials hr {
   background: #fff;

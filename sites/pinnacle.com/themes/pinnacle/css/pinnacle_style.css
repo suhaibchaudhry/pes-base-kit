@@ -45,11 +45,11 @@
 /*Content*/
 #zone-preface-wrapper {
   background: url(../images/locations-bg.jpg) no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding: 0 0 45px 0;
+  margin-bottom: -30px; }
   #zone-preface-wrapper .zone-preface {
     background: none; }
-  #zone-preface-wrapper .form-item input {
-    width: 50%; }
 
 #zone-content {
   background: #fff; }
@@ -125,24 +125,6 @@
   -webkit-transition-delay: 0ms;
   transition: background 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0ms; }
 
-.front-testimonials hr {
-  background: #fff;
-  margin: 0 25%;
-  height: 2px; }
-.front-testimonials .views-row-last hr {
-  display: none; }
-
 /*Sponsors*/
 #zone-footer-wrapper {
   background: #fff; }
-  #zone-footer-wrapper .front-sponsors .view-content {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: center;
-    justify-content: center; }
-  #zone-footer-wrapper .front-sponsors .views-row {
-    margin-right: 10px; }
-  #zone-footer-wrapper .front-sponsors .views-row-last {
-    margin-right: 0; }
