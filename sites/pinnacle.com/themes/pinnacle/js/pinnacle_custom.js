@@ -20,6 +20,13 @@
 
 			that.$window.bind("scroll", callback);
 			that.$window.bind('load resize', dcallback);
+ 
+			//Disable transitions on mac since scrolling is smooth already.
+			if( $.browser.mac  ) {
+                                this.$zoneWrap.removeClass('nativeBgTransition');
+                        } else {
+                                this.$zoneWrap.addClass('nativeBgTransition');
+                        }
 
 			//Turn on cover background sizing for webkit browsers because ratio calculation with cover does not work in gecko and trident.
 			if( $.browser.webkit ) {
