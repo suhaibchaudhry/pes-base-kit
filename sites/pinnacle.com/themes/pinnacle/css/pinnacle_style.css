@@ -14,16 +14,18 @@
 
 /*Header*/
 #zone-user-wrapper {
-  height: 45px;
+  height: 36px;
   background: #11BAEA;
-  line-height: 45px; }
+  line-height: 36px; }
   #zone-user-wrapper .region-user-second {
     background: #11BAEA; }
+    #zone-user-wrapper .region-user-second .region-user-second-inner {
+      font-size: 10px; }
     #zone-user-wrapper .region-user-second div {
       float: right;
       color: #fff;
       font-weight: bold;
-      margin: 0 10px 0 0; }
+      margin: 0; }
 
 body.front #zone-branding-wrapper {
   position: relative;

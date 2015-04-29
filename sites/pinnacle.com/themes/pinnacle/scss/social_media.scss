@@ -15,7 +15,7 @@
 
 //@include all-social_media-sprites;
 
-
+ 
 div.email-icon {
 	@include social_media-sprite(email);
 	padding: 0 0 0 social_media-sprite-width(email);

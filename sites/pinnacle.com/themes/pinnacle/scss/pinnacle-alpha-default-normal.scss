@@ -1,6 +1,16 @@
 /* This file will hold styles that are loaded using the same media query as the normal grid. */
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+#zone-user-wrapper {
+	.region-user-second-inner {
+		font-size: initial;
+		
+		div {
+			margin: 0 10px 0 0;
+		}
+	}
+}
+
 #zone-postscript2 {
 	a.learnmore-button {
 		position: absolute;

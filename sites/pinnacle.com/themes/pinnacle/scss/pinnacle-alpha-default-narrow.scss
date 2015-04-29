@@ -2,6 +2,16 @@
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the normal and widescreen layouts. You may override these styles in the normal
  *  and widescreen CSS files as appropriate. */
+#zone-user-wrapper {
+	.region-user-second-inner {
+		font-size: initial;
+		
+		div {
+			margin: 0 10px 0 0;
+		}
+	}
+}
+
 #zone-postscript2 {
 	a.learnmore-button {
 		position: absolute;
