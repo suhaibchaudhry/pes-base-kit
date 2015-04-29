@@ -63,6 +63,8 @@
 		var documentHeight = this.$document.outerHeight();
 
 		this.$zoneWrap.each(function(i, e) {
+			//console.log(i+": ");
+			//console.log(e);
 			var zoneWrap = $(e);
 			if(scrollTop+windowHeight >= zoneWrap.offset().top) {
 				var factor = Math.round(that.max_image_pos[i]-(((documentHeight-scrollTop-windowHeight)/(documentHeight-windowHeight))*that.max_image_pos[i]));
@@ -92,8 +94,10 @@
 
 		background[i] = new Image();
 		background[i].src = bg[i];
-
+		background[i].dataset.index = i;
 		background[i].onload = function() {
+		    var i = parseInt(this.dataset.index);
+
 		    //console.log('W: '+background[i].width+' H: '+background[i].height);
 		    //console.log('OW: '+div[i].offsetWidth+' OH: '+div[i].offsetHeight);
 		    if (background[i].width > background[i].height) {
@@ -124,7 +128,9 @@
 		        }
 		    }
 		    //console.log(bgW + ", " + bgH);
-		    that.max_image_pos[i] = bgH-zone.height();
+		    that.max_image_pos[i] = bgH-$(div[i]).outerHeight();
+		    //console.log(i+": ");
+		    //console.log(this);
 		    //console.log('Loading : '+i+' : Height: '+that.max_image_pos[i]);
 		    that.triggerScrollEvent();
 		}
