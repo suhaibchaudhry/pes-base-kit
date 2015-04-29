@@ -88,52 +88,52 @@
 		var bg = [];
 		var background = [];
 		zone.each(function(i, e) {
- 		div[i] = zone.get(i);
-		style[i] = div[i].currentStyle || window.getComputedStyle(div[i], false);
-		bg[i] = style[i].backgroundImage.slice(4, -1);
+			div[i] = zone.get(i);
+			style[i] = div[i].currentStyle || window.getComputedStyle(div[i], false);
+			bg[i] = style[i].backgroundImage.slice(4, -1);
 
-		background[i] = new Image();
-		background[i].src = bg[i];
-		background[i].dataset.index = i;
-		background[i].onload = function() {
-		    var i = parseInt(this.dataset.index);
+			background[i] = new Image();
+			background[i].src = bg[i];
+			background[i].dataset.index = i;
+			background[i].onload = function() {
+			    var i = parseInt(this.dataset.index);
 
-		    //console.log('W: '+background[i].width+' H: '+background[i].height);
-		    //console.log('OW: '+div[i].offsetWidth+' OH: '+div[i].offsetHeight);
-		    if (background[i].width > background[i].height) {
-		        var ratio = background[i].height / background[i].width;
-		        if (div[i].offsetWidth > div[i].offsetHeight) {
-		            var bgW = div[i].offsetWidth;
-		            var bgH = Math.round(div[i].offsetWidth * ratio);
-		            if (bgH < div[i].offsetHeight) {
-		                bgH = div[i].offsetHeight;
-		                bgW = Math.round(bgH / ratio);
-		            }
-		        } else {
-		            var bgW = Math.round(div[i].offsetHeight / ratio);
-		            var bgH = div[i].offsetHeight;
-		        }
-		    } else {
-		        var ratio = background[i].width / background[i].height;
-		        if (div[i].offsetHeight > div[i].offsetWidth) {
-		            var bgH = div[i].offsetHeight;
-		            var bgW = Math.round(div[i].offsetHeight * ratio);
-		            if (bgW > div[i].offsetWidth) {
-		                bgW = div[i].offsetWidth;
-		                bgH = Math.round(bgW / ratio);
-		            }
-		        } else {
-		            var bgW = Math.round(div[i].offsetWidth / ratio);
-		            var bgH = div[i].offsetWidth;
-		        }
-		    }
-		    //console.log(bgW + ", " + bgH);
-		    that.max_image_pos[i] = bgH-$(div[i]).outerHeight();
-		    //console.log(i+": ");
-		    //console.log(this);
-		    //console.log('Loading : '+i+' : Height: '+that.max_image_pos[i]);
-		    that.triggerScrollEvent();
-		}
+			    //console.log('W: '+background[i].width+' H: '+background[i].height);
+			    //console.log('OW: '+div[i].offsetWidth+' OH: '+div[i].offsetHeight);
+			    if (background[i].width > background[i].height) {
+				var ratio = background[i].height / background[i].width;
+				if (div[i].offsetWidth > div[i].offsetHeight) {
+				    var bgW = div[i].offsetWidth;
+				    var bgH = Math.round(div[i].offsetWidth * ratio);
+				    if (bgH < div[i].offsetHeight) {
+					bgH = div[i].offsetHeight;
+					bgW = Math.round(bgH / ratio);
+				    }
+				} else {
+				    var bgW = Math.round(div[i].offsetHeight / ratio);
+				    var bgH = div[i].offsetHeight;
+				}
+			    } else {
+				var ratio = background[i].width / background[i].height;
+				if (div[i].offsetHeight > div[i].offsetWidth) {
+				    var bgH = div[i].offsetHeight;
+				    var bgW = Math.round(div[i].offsetHeight * ratio);
+				    if (bgW > div[i].offsetWidth) {
+					bgW = div[i].offsetWidth;
+					bgH = Math.round(bgW / ratio);
+				    }
+				} else {
+				    var bgW = Math.round(div[i].offsetWidth / ratio);
+				    var bgH = div[i].offsetWidth;
+				}
+			    }
+			    //console.log(bgW + ", " + bgH);
+			    that.max_image_pos[i] = bgH-$(div[i]).outerHeight();
+			    //console.log(i+": ");
+			    //console.log(this);
+			    //console.log('Loading : '+i+' : Height: '+that.max_image_pos[i]);
+			    that.triggerScrollEvent();
+			}
 		});
   	}
  }
