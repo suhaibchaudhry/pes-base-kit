@@ -13,10 +13,14 @@
 			this.$window = $(window);
 			this.$document = $(document);
 			this.$zoneWrap = $('#zone-postscript-wrapper, #zone-preface-wrapper', context);
+			this.$wraps = [];
 			var callback = this.contextualize(this.scrollHandler, this);
 			var dcallback = this.contextualize(this.triggerDimensions, this);
 			var that = this;
-			this.$zoneWrap.each(function() {that.max_image_pos.push(that.max_image_position)});
+			this.$zoneWrap.each(function(i, e) {
+				that.$wraps[i] = $(e);
+				that.max_image_pos.push(that.max_image_position)
+			});
 
 			that.$window.bind("scroll", callback);
 			that.$window.bind('load resize', dcallback);
@@ -65,7 +69,7 @@
 		this.$zoneWrap.each(function(i, e) {
 			//console.log(i+": ");
 			//console.log(e);
-			var zoneWrap = $(e);
+			var zoneWrap = that.$wraps[i];
 			if(scrollTop+windowHeight >= zoneWrap.offset().top) {
 				var factor = Math.round(that.max_image_pos[i]-(((documentHeight-scrollTop-windowHeight)/(documentHeight-windowHeight))*that.max_image_pos[i]));
 				if(factor > 0) {
@@ -128,7 +132,7 @@
 				}
 			    }
 			    //console.log(bgW + ", " + bgH);
-			    that.max_image_pos[i] = bgH-$(div[i]).outerHeight();
+			    that.max_image_pos[i] = bgH-that.$wraps[i].outerHeight();
 			    //console.log(i+": ");
 			    //console.log(this);
 			    //console.log('Loading : '+i+' : Height: '+that.max_image_pos[i]);
