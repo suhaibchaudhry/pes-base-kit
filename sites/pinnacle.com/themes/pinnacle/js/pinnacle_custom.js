@@ -18,7 +18,7 @@
 			var dcallback = this.contextualize(this.triggerDimensions, this);
 			var that = this;
 			this.$zoneWrap.each(function(i, e) {
-				that.$wraps[i] = $(e);
+				that.$wraps.push($(e));
 				that.max_image_pos.push(that.max_image_position)
 			});
 
