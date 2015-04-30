@@ -47,6 +47,9 @@ regions[postscript2_first] = Postscript 2 First
 regions[postscript2_second] = Postscript 2 Second
 regions[postscript2_third] = Postscript 2 Third
 
+regions[footer2_third] = Footer2 Third
+regions[footer2_fourth] = Footer2 Fourth
+
 ; ZONES
 
 zones[user] = User

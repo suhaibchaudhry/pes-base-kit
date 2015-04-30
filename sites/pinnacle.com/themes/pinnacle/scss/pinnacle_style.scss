@@ -190,3 +190,8 @@ body.front {
 #zone-footer-wrapper {
 	background: #fff;
 }
+
+/*Footer 2*/
+#zone-footer2-wrapper {
+	@include background-image(linear-gradient(#4d4d4d, #2c2c2c));
+}
