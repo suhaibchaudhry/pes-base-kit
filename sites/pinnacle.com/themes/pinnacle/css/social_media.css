@@ -1,5 +1,5 @@
 .social_media-sprite, div.email-icon, div.phone-icon, a.twitter-button, a.twitter-button:hover, a.facebook-button, a.facebook-button:hover, a.gplus-button, a.gplus-button:hover, a.youtube-button, a.youtube-button:hover {
-  background-image: url('../images/social_media-se0f7643cb0.png');
+  background-image: url('../images/social_media-s5d1bf810b8.png');
   background-repeat: no-repeat; }
 
 div.email-icon {
@@ -7,40 +7,40 @@ div.email-icon {
   padding: 0 0 0 43px; }
 
 div.phone-icon {
-  background-position: 0 -180px;
+  background-position: 0 -184px;
   padding: 0 0 0 45px; }
 
 a.social-button {
   float: left; }
 
 a.twitter-button {
-  background-position: 0 -252px;
+  background-position: 0 -256px;
   height: 36px;
   width: 39px;
   text-indent: -9999px; }
   a.twitter-button:hover {
-    background-position: 0 -216px; }
+    background-position: 0 -220px; }
 
 a.facebook-button {
-  background-position: 0 -72px;
-  height: 36px;
-  width: 38px;
+  background-position: 0 -74px;
+  height: 38px;
+  width: 36px;
   text-indent: -9999px; }
   a.facebook-button:hover {
     background-position: 0 -36px; }
 
 a.gplus-button {
-  background-position: 0 -144px;
+  background-position: 0 -148px;
   height: 36px;
   width: 38px;
   text-indent: -9999px; }
   a.gplus-button:hover {
-    background-position: 0 -108px; }
+    background-position: 0 -112px; }
 
 a.youtube-button {
-  background-position: 0 -324px;
+  background-position: 0 -328px;
   height: 36px;
   width: 39px;
   text-indent: -9999px; }
   a.youtube-button:hover {
-    background-position: 0 -288px; }
+    background-position: 0 -292px; }
