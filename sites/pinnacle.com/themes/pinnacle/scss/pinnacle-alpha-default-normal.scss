@@ -1,6 +1,8 @@
 /* This file will hold styles that are loaded using the same media query as the normal grid. */
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+@import "compass/css3";
+
 #zone-user-wrapper {
 	.region-user-second-inner {
 		font-size: initial;
@@ -29,10 +31,69 @@
 	}
 }
 
-#zone-branding {
-	.region-menu {
-			.primary-menu {
-				float: right;
+body.front {
+	#zone-user-wrapper {
+		position: relative;
+		@include single-box-shadow(0, 0, 20px, null, #505050, null);
+	}
+
+	#zone-branding-wrapper {
+		position: relative;
+		@include single-box-shadow(0, 0, 20px, null, #505050, null);
+	}
+}
+
+#zone-branding-wrapper {
+	#zone-branding {
+		#block-tb-megamenu-main-menu {
+			float: right;
+			margin-right: -10px;
+		}
+
+		.tb-megamenu {
+			.nav-collapse {
+				.dropdown-toggle {
+					background-color: transparent;
+				}
+			}
+
+			margin-top: 25px;
+			background-color: transparent;
+			text-transform: lowercase;
+			
+			.dropdown-toggle {
+				border: none;
+				color: #000;
+				font-weight: normal;
+				padding: 10px;
+			}
+
+			.dropdown-menu {
+				background-color: #fff;
+
+				.active > a {
+					background: #fff;
+					font-weight: bold;
+					color: #000;
+				}
+
+				li > a:hover {
+					color: #000;
+					font-weight: bold;
+				}
+			}
+
+			.nav {
+				li.dropdown.open > .dropdown-toggle {
+					color: #000;
+				}
+			}
+		}
+
+		.region-menu {
+				.primary-menu {
+					float: right;
+			}
 		}
 	}
 }

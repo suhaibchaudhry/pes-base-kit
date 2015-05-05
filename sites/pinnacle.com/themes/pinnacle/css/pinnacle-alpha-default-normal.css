@@ -17,5 +17,41 @@
   #zone-postscript2 .region .block {
     padding: 10px 40px 55px; }
 
-#zone-branding .region-menu .primary-menu {
+body.front #zone-user-wrapper {
+  position: relative;
+  -moz-box-shadow: 0 0 20px #505050;
+  -webkit-box-shadow: 0 0 20px #505050;
+  box-shadow: 0 0 20px #505050; }
+body.front #zone-branding-wrapper {
+  position: relative;
+  -moz-box-shadow: 0 0 20px #505050;
+  -webkit-box-shadow: 0 0 20px #505050;
+  box-shadow: 0 0 20px #505050; }
+
+#zone-branding-wrapper #zone-branding #block-tb-megamenu-main-menu {
+  float: right;
+  margin-right: -10px; }
+#zone-branding-wrapper #zone-branding .tb-megamenu {
+  margin-top: 25px;
+  background-color: transparent;
+  text-transform: lowercase; }
+  #zone-branding-wrapper #zone-branding .tb-megamenu .nav-collapse .dropdown-toggle {
+    background-color: transparent; }
+  #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-toggle {
+    border: none;
+    color: #000;
+    font-weight: normal;
+    padding: 10px; }
+  #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu {
+    background-color: #fff; }
+    #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu .active > a {
+      background: #fff;
+      font-weight: bold;
+      color: #000; }
+    #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu li > a:hover {
+      color: #000;
+      font-weight: bold; }
+  #zone-branding-wrapper #zone-branding .tb-megamenu .nav li.dropdown.open > .dropdown-toggle {
+    color: #000; }
+#zone-branding-wrapper #zone-branding .region-menu .primary-menu {
   float: right; }

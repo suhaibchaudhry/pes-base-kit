@@ -7,6 +7,17 @@
   #zone-user-wrapper .region-user-second-inner div {
     margin: 0 10px 0 0; }
 
+body.front #zone-user-wrapper {
+  position: relative;
+  -moz-box-shadow: 0 0 20px #505050;
+  -webkit-box-shadow: 0 0 20px #505050;
+  box-shadow: 0 0 20px #505050; }
+body.front #zone-branding-wrapper {
+  position: relative;
+  -moz-box-shadow: 0 0 20px #505050;
+  -webkit-box-shadow: 0 0 20px #505050;
+  box-shadow: 0 0 20px #505050; }
+
 #zone-postscript2 a.learnmore-button {
   position: absolute;
   right: 22px;
@@ -16,5 +27,24 @@
 #zone-postscript2 .region .block {
   padding: 10px 20px 55px; }
 
-#zone-branding .region-menu .primary-menu {
+#zone-branding-wrapper #zone-branding .tb-megamenu {
+  margin-top: 25px;
+  background-color: transparent;
+  text-transform: lowercase; }
+  #zone-branding-wrapper #zone-branding .tb-megamenu button {
+    width: 100%; }
+  #zone-branding-wrapper #zone-branding .tb-megamenu .nav-collapse {
+    background-color: #000; }
+    #zone-branding-wrapper #zone-branding .tb-megamenu .nav-collapse .tb-megamenu-nav {
+      float: none; }
+    #zone-branding-wrapper #zone-branding .tb-megamenu .nav-collapse .dropdown-toggle {
+      background-color: #000; }
+  #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-toggle {
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px; }
+  #zone-branding-wrapper #zone-branding .tb-megamenu ul.level-0 {
+    float: right; }
+#zone-branding-wrapper #zone-branding .region-menu .primary-menu {
   float: right; }

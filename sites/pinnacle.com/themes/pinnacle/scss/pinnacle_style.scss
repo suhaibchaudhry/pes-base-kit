@@ -15,6 +15,22 @@
 	background: #fff;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	color: #11baea;
+	@include single-text-shadow(0, 0, 1px, false, #9b9b9b);
+}
+
+h2 {
+	font-size: 38px;
+}
+
+body p {
+	color: #4f4f4f;
+	@include single-text-shadow(0, 0, 3px, false, #e5e5e5);
+	font-size: 14px;
+	line-height: 22px;
+}
+
 /*Header*/
 #zone-user-wrapper {
 	height: 36px;
@@ -41,12 +57,54 @@
 body.front {
 	#zone-branding-wrapper {
 		position: relative;
-		@include single-box-shadow(0, 0, 20px, null, #505050, null);
+		//@include single-box-shadow(0, 0, 20px, null, #505050, null);
 	}
 }
 
 #zone-branding-wrapper {
 	#zone-branding {
+		.tb-megamenu {
+			button {
+				width: 100%;
+			}
+
+			.row-fluid {
+				/*background: #11b5e4;*/
+			}
+
+			.nav {
+				li.dropdown.open > .dropdown-toggle {
+					color: #fff;
+				}
+			}
+
+			/*margin-top: 25px;
+			background-color: transparent;*/
+			text-transform: lowercase;
+			
+			.dropdown-toggle {
+				border: none;
+				/*color: #000;
+				font-weight: normal;*/
+				padding: 10px;
+				background-color: #000;
+			}
+
+			.dropdown-menu {
+				background-color: #4B4B4A;
+			}
+
+			.dropdown-menu li, .dropdown-submenu li{
+				a:hover, a:focus {
+					color: #fff;
+				}
+			} 
+
+			ul.level-0 {
+				/*float: right;*/
+			}
+		}
+
 		.region-menu {
 			margin: 45px 0 0;
 		
@@ -159,6 +217,26 @@ h1#page-title {
 	}
 }
 
+#block-block-9 {
+	font-size: 10px;
+}
+
+#block-block-8, #block-block-9 {
+	p {
+		font-size: 12px;
+		padding: 2px 0 0 0;
+		font-style: italic;
+		color: #fff;
+		@include single-text-shadow(0, 0, 5px, false, #2d2d2d);
+	}
+}
+
+#zone-footer2 {
+	h2 {
+		color: #fff;
+	}
+}
+
 /*Testimonials*/
 #zone-postscript-wrapper {
 
@@ -198,4 +276,107 @@ h1#page-title {
 /*Footer 2*/
 #zone-footer2-wrapper {
 	@include background-image(linear-gradient(#4d4d4d, #2c2c2c));
+
+	h2.block-title {
+		font-size: 16px;
+		font-weight: 600;
+	}
+}
+
+.section-footer {
+	@include single-text-shadow(1px, 3px, 4px, false, #000);
+
+	ul.menu {
+		li {
+			width: 50%;
+			float: left;
+			font-size: 12px;
+			padding: 2px 0 0 0;
+			font-style: italic;
+
+			a:link {
+				color: #fff;
+			}
+		}
+
+		a:link, a:visited {
+			color: #fff;
+		}
+
+		a:hover {
+			color: #eaeaea;
+		}
+	}
+}
+
+/*Not Front*/
+.not-front {
+	#section-header {
+		@include single-box-shadow(0, 0, 10px, null, #d3d3d3, null);
+	}
+
+	#zone-content {
+		background: transparent;
+	}
+
+	.section-content {
+		@include background-image(linear-gradient(#eee, #cecece));
+	}
+
+	h1#page-title {
+		color: #444;
+		@include single-text-shadow(0, 0, 10px, false, #b0b0b0);
+		margin: 10px 0;
+	}
+}
+
+/*Contact Us*/
+.group-right {
+	.field-name-still-have-questions- {
+		background: #fff;
+		border-radius: 0 0 4px 4px;
+
+		h2.block-title {
+			background: #444;
+			padding: 8px 11px;
+			border-radius: 4px 4px 0 0;
+			color: #fff;
+			font-size: 15px;
+		}
+	}
+
+	.field-name-student-service-side-menu {
+		h2.block-title {
+			background: #444;
+			padding: 8px 11px;
+			border-radius: 4px 4px 0 0;
+			color: #fff;
+			font-size: 15px;
+		}
+
+		.menu {
+			padding-left: 0;
+
+			li {
+				margin: 0 auto;
+			}
+
+			.leaf {
+				background: #fff;
+				padding: 5px 10px;
+				font-size: 11px;
+				border-bottom: 1px solid #eaeaea;
+				list-style-image: none;
+				list-style-type: none;
+
+				a:link {
+					color: #797979;
+				}
+
+				a.active {
+					color: #C31010;
+				}
+			}
+		}
+	}
 }
