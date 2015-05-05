@@ -142,7 +142,7 @@ function ds_extras_settings($form) {
   $form['additional_settings']['fs4']['ds_extras_switch_field'] = array(
     '#type' => 'checkbox',
     '#title' => t('View mode switcher'),
-    '#description' => t('Adds a field with links to switch view modes inline with Ajax. Only works for nodes at this time. It does not work in combination with the reset layout.'),
+    '#description' => t('Adds a field with links to switch view modes inline with Ajax. Only works for nodes at this time.'),
     '#default_value' => variable_get('ds_extras_switch_field', FALSE),
   );
 
@@ -415,16 +415,6 @@ function ds_extras_field_template_settings_form(array &$form, array &$form_state
           ),
         ),
       );
-      $form['ft']['fi-first-last'] = array(
-        '#type' => 'checkbox',
-        '#title' => t('Add first/last classes'),
-        '#default_value' => isset($field_settings['fi-first-last']) ? $field_settings['fi-first-last'] : FALSE,
-        '#states' => array(
-          'visible' => array(
-            ':input[name$="[ft][' . $wrapper_key . ']"]' => array('checked' => TRUE),
-          ),
-        ),
-      );
     }
     if ($wrapper_key != 'lbw') {
       $form['ft'][$wrapper_key . '-def-at'] = array(
@@ -573,7 +563,7 @@ function ds_extras_block_submit($form, &$form_state) {
     $region_blocks = variable_get('ds_extras_region_blocks', array());
     $remove = $form_state['values']['additional_settings']['region_to_block']['remove_block_region'];
     foreach ($remove as $key => $value) {
-      if ($value != 0 && $key == $value) {
+      if ($key === $value) {
         $variable_set = TRUE;
         if (module_exists('block')) {
           db_delete('block')

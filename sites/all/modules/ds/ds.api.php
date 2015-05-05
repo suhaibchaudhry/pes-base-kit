@@ -238,7 +238,7 @@ function hook_ds_custom_fields_info() {
   );
   $ds_field->properties = array(
     'code' => array(
-      'value' => '<?php print "this is a custom field"; ?>',
+      'value' => '<? print "this is a custom field"; ?>',
       'format' => 'ds_code',
     ),
     'use_token' => 0,
@@ -268,9 +268,7 @@ function hook_ds_vd_info() {
 }
 
 /**
- * Alter fields defined by Display Suite.
- *
- * This function is called for each entity type.
+ * Alter fields defined by Display Suite
  *
  * @param $fields
  *   An array with fields which can be altered just before they get cached.
