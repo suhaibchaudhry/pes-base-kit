@@ -16,7 +16,6 @@
 
 body.front {
 	#zone-user-wrapper {
-		position: relative;
 		@include single-box-shadow(0, 0, 20px, null, #505050, null);
 	}
 

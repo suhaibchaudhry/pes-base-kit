@@ -320,7 +320,8 @@ h1#page-title {
 	}
 
 	.section-content {
-		@include background-image(linear-gradient(#eee, #cecece));
+		//@include background-image(linear-gradient(#eee, #cecece));
+		@include background-image(radial-gradient(1000px 1000px, #eee, #cecece));
 	}
 
 	h1#page-title {
@@ -331,6 +332,12 @@ h1#page-title {
 }
 
 /*Contact Us*/
+.group-header {
+	.field-name-field-page-banner {
+		margin-bottom: 20px;
+	}
+}
+
 .group-right {
 	.field-name-still-have-questions- {
 		background: #fff;
@@ -377,6 +384,21 @@ h1#page-title {
 					color: #C31010;
 				}
 			}
+		}
+	}
+}
+
+.group-middle {
+	.breadcrumb {
+		margin: 0 20px 20px 0;
+		background: transparent;
+		border: none;
+		color: #444;
+		padding: 0;
+		font-size: 15px;
+
+		a {
+			color: #444;
 		}
 	}
 }

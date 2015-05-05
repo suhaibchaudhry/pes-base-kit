@@ -8,7 +8,6 @@
     margin: 0 10px 0 0; }
 
 body.front #zone-user-wrapper {
-  position: relative;
   -moz-box-shadow: 0 0 20px #505050;
   -webkit-box-shadow: 0 0 20px #505050;
   box-shadow: 0 0 20px #505050; }
