@@ -7,8 +7,12 @@
 @import url(//fonts.googleapis.com/css?family=Gentium+Basic:400,700);
 */
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /* End Variables & Mixins */
 /*HTML*/
+.front .block-blockify-blockify-page-title {
+  display: none; }
+
 .html {
   background: #fff; }
 
