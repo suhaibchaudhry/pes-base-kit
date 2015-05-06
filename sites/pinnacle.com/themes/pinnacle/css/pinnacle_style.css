@@ -1,16 +1,12 @@
-/* This file will hold styles for the mobile version of your website (mobile first). */
-/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
-/* Override Omega */
-/* Include Default Variables & Mixins */
 /*
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
 @import url(//fonts.googleapis.com/css?family=Gentium+Basic:400,700);
 */
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
-/* End Variables & Mixins */
-/*HTML*/
 .front .block-blockify-blockify-page-title {
+  display: none; }
+.front #zone-header-wrapper {
   display: none; }
 
 .html {
@@ -29,7 +25,16 @@ body p {
   font-size: 14px;
   line-height: 22px; }
 
-/*Header*/
+#block-tb-megamenu-main-menu ul li a {
+  font-size: 17px;
+  text-shadow: 0 0 7px #d7d7d7;
+  color: #282828; }
+
+#zone-header-wrapper {
+  background: #3a3a3a;
+  padding: 7px 0;
+  margin-bottom: 25px; }
+
 #zone-user-wrapper {
   height: 36px;
   background: #11BAEA;
@@ -47,28 +52,26 @@ body p {
 body.front #zone-branding-wrapper {
   position: relative; }
 
+#zone-branding-wrapper #zone-branding .region-branding {
+  margin-right: 30px; }
 #zone-branding-wrapper #zone-branding .tb-megamenu {
-  /*margin-top: 25px;
-  background-color: transparent;*/
   text-transform: lowercase; }
   #zone-branding-wrapper #zone-branding .tb-megamenu button {
     width: 100%; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .row-fluid {
-    /*background: #11b5e4;*/ }
+    background: #11b5e4; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .nav li.dropdown.open > .dropdown-toggle {
     color: #fff; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-toggle {
     border: none;
-    /*color: #000;
-    font-weight: normal;*/
     padding: 10px;
     background-color: #000; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu {
     background-color: #4B4B4A; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu li a:hover, #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu li a:focus, #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-submenu li a:hover, #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-submenu li a:focus {
     color: #fff; }
-  #zone-branding-wrapper #zone-branding .tb-megamenu ul.level-0 {
-    /*float: right;*/ }
+  #zone-branding-wrapper #zone-branding .tb-megamenu ul.tb-megamenu-nav li.level-1:last-child > a {
+    padding-right: 15px; }
 #zone-branding-wrapper #zone-branding .region-menu {
   margin: 45px 0 0; }
   #zone-branding-wrapper #zone-branding .region-menu .main-menu a {
@@ -86,7 +89,6 @@ body.front #zone-branding-wrapper {
     text-transform: lowercase;
     color: #D50606; }
 
-/*Content*/
 h1#page-title {
   color: #C31010; }
 
@@ -101,7 +103,6 @@ h1#page-title {
 #zone-content {
   background: #fff; }
 
-/*Info Blocks*/
 #zone-postscript2 a.learnmore-button {
   color: #fff;
   margin: 0px 0px;
@@ -116,7 +117,6 @@ h1#page-title {
 #zone-postscript2 .region {
   position: relative;
   margin-bottom: 15px;
-  /*box-shadow: 0 0 5px #646464;*/
   -moz-box-shadow: 0 0 5px #646464;
   -webkit-box-shadow: 0 0 5px #646464;
   box-shadow: 0 0 5px #646464;
@@ -161,7 +161,6 @@ h1#page-title {
 #zone-footer2 h2 {
   color: #fff; }
 
-/*Testimonials*/
 #zone-postscript-wrapper {
   background: url(../images/testimonials-bg.jpg);
   background-position: center top;
@@ -178,7 +177,6 @@ h1#page-title {
       #zone-postscript-wrapper .node-teaser .field-name-field-author .field-item:before {
         content: '- '; }
 
-/*Native BG transitions*/
 .nativeBgTransition {
   -moz-transition: background 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
   -o-transition: background 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
@@ -186,11 +184,9 @@ h1#page-title {
   -webkit-transition-delay: 0ms;
   transition: background 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0ms; }
 
-/*Sponsors*/
 #zone-footer-wrapper {
   background: #fff; }
 
-/*Footer 2*/
 #zone-footer2-wrapper {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRkNGQ0ZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzJjMmMyYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -217,7 +213,6 @@ h1#page-title {
   .section-footer ul.menu a:hover {
     color: #eaeaea; }
 
-/*Not Front*/
 .not-front #section-header {
   -moz-box-shadow: 0 0 10px #d3d3d3;
   -webkit-box-shadow: 0 0 10px #d3d3d3;
@@ -231,44 +226,67 @@ h1#page-title {
   background-image: -webkit-radial-gradient(1000px 1000px, #eeeeee, #cecece);
   background-image: radial-gradient(1000px 1000px, #eeeeee, #cecece); }
 .not-front h1#page-title {
-  color: #444;
-  text-shadow: 0 0 10px #b0b0b0;
-  margin: 10px 0; }
+  color: #fff;
+  text-shadow: 0 0 10px #202020;
+  margin: 10px 0;
+  text-transform: lowercase;
+  font-size: 44px; }
 
-/*Contact Us*/
 .group-header .field-name-field-page-banner {
   margin-bottom: 20px; }
 
-.group-right .field-name-still-have-questions- {
+.group-right .field-name-still-have-questions-, .group-right .field-name-apply-now-side-bar {
   background: #fff;
-  border-radius: 0 0 4px 4px; }
-  .group-right .field-name-still-have-questions- h2.block-title {
+  border-radius: 0 0 4px 4px;
+  margin-bottom: 10px; }
+  .group-right .field-name-still-have-questions- h2.block-title, .group-right .field-name-apply-now-side-bar h2.block-title {
     background: #444;
     padding: 8px 11px;
     border-radius: 4px 4px 0 0;
     color: #fff;
     font-size: 15px; }
-.group-right .field-name-student-service-side-menu h2.block-title {
-  background: #444;
-  padding: 8px 11px;
-  border-radius: 4px 4px 0 0;
-  color: #fff;
-  font-size: 15px; }
-.group-right .field-name-student-service-side-menu .menu {
-  padding-left: 0; }
-  .group-right .field-name-student-service-side-menu .menu li {
-    margin: 0 auto; }
-  .group-right .field-name-student-service-side-menu .menu .leaf {
-    background: #fff;
-    padding: 5px 10px;
+  .group-right .field-name-still-have-questions- .apply-now, .group-right .field-name-apply-now-side-bar .apply-now {
     font-size: 11px;
-    border-bottom: 1px solid #eaeaea;
-    list-style-image: none;
-    list-style-type: none; }
-    .group-right .field-name-student-service-side-menu .menu .leaf a:link {
-      color: #797979; }
-    .group-right .field-name-student-service-side-menu .menu .leaf a.active {
-      color: #C31010; }
+    font-weight: normal;
+    color: #000; }
+  .group-right .field-name-still-have-questions- .contact-us-link-wrapper, .group-right .field-name-still-have-questions- .apply-now, .group-right .field-name-apply-now-side-bar .contact-us-link-wrapper, .group-right .field-name-apply-now-side-bar .apply-now {
+    padding: 4px 20px;
+    border-bottom: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1; }
+    .group-right .field-name-still-have-questions- .contact-us-link-wrapper .contact-us-button, .group-right .field-name-still-have-questions- .apply-now .contact-us-button, .group-right .field-name-apply-now-side-bar .contact-us-link-wrapper .contact-us-button, .group-right .field-name-apply-now-side-bar .apply-now .contact-us-button {
+      font-size: 11px;
+      font-weight: normal;
+      color: #000; }
+.group-right .field-name-student-services-sub-menu-, .group-right .field-name-about-pes-sidemenu, .group-right .field-name-school-services-sub-menu-, .group-right .field-name-affiliation-sub-menu, .group-right .field-name-news-events {
+  margin-bottom: 10px; }
+  .group-right .field-name-student-services-sub-menu- h2.block-title, .group-right .field-name-about-pes-sidemenu h2.block-title, .group-right .field-name-school-services-sub-menu- h2.block-title, .group-right .field-name-affiliation-sub-menu h2.block-title, .group-right .field-name-news-events h2.block-title {
+    background: #11baea;
+    padding: 10px;
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+    text-shadow: 0 0 3px #2d2d2d; }
+  .group-right .field-name-student-services-sub-menu- .tb-megamenu .nav > li, .group-right .field-name-about-pes-sidemenu .tb-megamenu .nav > li, .group-right .field-name-school-services-sub-menu- .tb-megamenu .nav > li, .group-right .field-name-affiliation-sub-menu .tb-megamenu .nav > li, .group-right .field-name-news-events .tb-megamenu .nav > li {
+    float: none;
+    background: #fff;
+    border-bottom: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1; }
+  .group-right .field-name-student-services-sub-menu- .tb-megamenu .nav > .active > a, .group-right .field-name-about-pes-sidemenu .tb-megamenu .nav > .active > a, .group-right .field-name-school-services-sub-menu- .tb-megamenu .nav > .active > a, .group-right .field-name-affiliation-sub-menu .tb-megamenu .nav > .active > a, .group-right .field-name-news-events .tb-megamenu .nav > .active > a {
+    background: #444;
+    color: #fff;
+    font-weight: bold; }
+  .group-right .field-name-student-services-sub-menu- .tb-megamenu .nav > li > a, .group-right .field-name-about-pes-sidemenu .tb-megamenu .nav > li > a, .group-right .field-name-school-services-sub-menu- .tb-megamenu .nav > li > a, .group-right .field-name-affiliation-sub-menu .tb-megamenu .nav > li > a, .group-right .field-name-news-events .tb-megamenu .nav > li > a {
+    font-weight: normal;
+    padding: 6px 20px;
+    font-size: 11px;
+    border-right: none;
+    color: #000; }
+    .group-right .field-name-student-services-sub-menu- .tb-megamenu .nav > li > a:hover, .group-right .field-name-about-pes-sidemenu .tb-megamenu .nav > li > a:hover, .group-right .field-name-school-services-sub-menu- .tb-megamenu .nav > li > a:hover, .group-right .field-name-affiliation-sub-menu .tb-megamenu .nav > li > a:hover, .group-right .field-name-news-events .tb-megamenu .nav > li > a:hover {
+      background: #b0afaf; }
+
+body {
+  font-family: 'lato', arial, helvetica, sans-serif; }
 
 .group-middle .breadcrumb {
   margin: 0 20px 20px 0;

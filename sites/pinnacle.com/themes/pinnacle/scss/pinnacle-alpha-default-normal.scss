@@ -67,13 +67,18 @@ body.front {
 				padding: 10px;
 			}
 
+			.dropdown-menu .active > a {
+				background: #11b5e4;
+			}
+
+
 			.dropdown-menu {
 				background-color: #fff;
 
 				.active > a {
-					background: #fff;
+					background: #C31010;
 					font-weight: bold;
-					color: #000;
+					color: #11b5e4;
 				}
 
 				li > a:hover {

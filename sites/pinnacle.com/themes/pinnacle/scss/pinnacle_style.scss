@@ -1,21 +1,25 @@
-/* This file will hold styles for the mobile version of your website (mobile first). */
-/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
-/* Override Omega */
+// This file will hold styles for the mobile version of your website (mobile first).
+// This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide.
+// Override Omega
 
-/* Include Default Variables & Mixins */
+// Include Default Variables & Mixins */
 @import "_variables.scss";
 @import "_mixins.scss";
 @import "compass/css3";
 
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
-/* End Variables & Mixins */
+// End Variables & Mixins
 
-/*HTML*/
+//HTML
 
 
 .front {
 	.block-blockify-blockify-page-title {
+		display: none;
+	}
+
+	#zone-header-wrapper {
 		display: none;
 	}
 }
@@ -40,7 +44,20 @@ body p {
 	line-height: 22px;
 }
 
-/*Header*/
+//Header
+#block-tb-megamenu-main-menu ul li a {
+	//font-weight: 600;
+	font-size: 17px;
+	text-shadow: 0 0 7px #d7d7d7;
+	color: #282828;
+}
+
+#zone-header-wrapper {
+	background: #3a3a3a;
+	padding: 7px 0;
+	margin-bottom: 25px;
+}
+
 #zone-user-wrapper {
 	height: 36px;
 	background: #11BAEA;
@@ -70,15 +87,21 @@ body.front {
 	}
 }
 
+
+
 #zone-branding-wrapper {
 	#zone-branding {
+		.region-branding {
+			margin-right: 30px;
+		}
+
 		.tb-megamenu {
 			button {
 				width: 100%;
 			}
 
 			.row-fluid {
-				/*background: #11b5e4;*/
+				background: #11b5e4;
 			}
 
 			.nav {
@@ -87,14 +110,14 @@ body.front {
 				}
 			}
 
-			/*margin-top: 25px;
-			background-color: transparent;*/
+			//margin-top: 25px;
+			//background-color: transparent;
 			text-transform: lowercase;
 			
 			.dropdown-toggle {
 				border: none;
-				/*color: #000;
-				font-weight: normal;*/
+				//color: #000;
+				//font-weight: normal;
 				padding: 10px;
 				background-color: #000;
 			}
@@ -109,9 +132,13 @@ body.front {
 				}
 			} 
 
-			ul.level-0 {
-				/*float: right;*/
+			ul.tb-megamenu-nav li.level-1:last-child > a {
+				padding-right: 15px;
 			}
+
+			//ul.level-0 {
+			//	float: right;
+			//}
 		}
 
 		.region-menu {
@@ -145,7 +172,7 @@ body.front {
 	}
 }
 
-/*Content*/
+//Content
 h1#page-title {
 	color: #C31010;
 }
@@ -165,7 +192,7 @@ h1#page-title {
 	background: #fff;
 }
 
-/*Info Blocks*/
+//Info Blocks
 #zone-postscript2 {
 	a.learnmore-button {
                 color: #fff;
@@ -180,7 +207,7 @@ h1#page-title {
 	.region {
 		position: relative;
 		margin-bottom: 15px;
-		/*box-shadow: 0 0 5px #646464;*/
+		//box-shadow: 0 0 5px #646464;
 		@include single-box-shadow(0, 0, 5px, null, #646464, null);
 		@include rounded-corners (3px);
 
@@ -246,7 +273,7 @@ h1#page-title {
 	}
 }
 
-/*Testimonials*/
+//Testimonials
 #zone-postscript-wrapper {
 
 	background: url(../images/testimonials-bg.jpg);
@@ -272,17 +299,17 @@ h1#page-title {
 	}
 }
 
-/*Native BG transitions*/
+//Native BG transitions
 .nativeBgTransition {	
 	@include single-transition(background, 2s, cubic-bezier(0.075, 0.820, 0.165, 1.000), 0ms);
 }
 
-/*Sponsors*/
+//Sponsors
 #zone-footer-wrapper {
 	background: #fff;
 }
 
-/*Footer 2*/
+//Footer 2
 #zone-footer2-wrapper {
 	@include background-image(linear-gradient(#4d4d4d, #2c2c2c));
 
@@ -318,7 +345,7 @@ h1#page-title {
 	}
 }
 
-/*Not Front*/
+//Not Front
 .not-front {
 	#section-header {
 		@include single-box-shadow(0, 0, 10px, null, #d3d3d3, null);
@@ -334,13 +361,15 @@ h1#page-title {
 	}
 
 	h1#page-title {
-		color: #444;
-		@include single-text-shadow(0, 0, 10px, false, #b0b0b0);
+		color: #fff;
+		@include single-text-shadow(0, 0, 10px, false, #202020);
 		margin: 10px 0;
+		text-transform: lowercase;
+		font-size: 44px;
 	}
 }
 
-/*Contact Us*/
+//Contact Us
 .group-header {
 	.field-name-field-page-banner {
 		margin-bottom: 20px;
@@ -348,9 +377,10 @@ h1#page-title {
 }
 
 .group-right {
-	.field-name-still-have-questions- {
+	.field-name-still-have-questions-, .field-name-apply-now-side-bar {
 		background: #fff;
 		border-radius: 0 0 4px 4px;
+		margin-bottom: 10px;
 
 		h2.block-title {
 			background: #444;
@@ -359,42 +389,71 @@ h1#page-title {
 			color: #fff;
 			font-size: 15px;
 		}
-	}
 
-	.field-name-student-service-side-menu {
-		h2.block-title {
-			background: #444;
-			padding: 8px 11px;
-			border-radius: 4px 4px 0 0;
-			color: #fff;
-			font-size: 15px;
+		.apply-now {
+			font-size: 11px;
+			font-weight: normal;
+			color: #000;
 		}
 
-		.menu {
-			padding-left: 0;
+		.contact-us-link-wrapper, .apply-now {
+			padding: 4px 20px;
+			border-bottom: 1px solid #c1c1c1;
+			border-right: 1px solid #c1c1c1;
+			border-left: 1px solid #c1c1c1;
 
-			li {
-				margin: 0 auto;
-			}
-
-			.leaf {
-				background: #fff;
-				padding: 5px 10px;
+			.contact-us-button {
 				font-size: 11px;
-				border-bottom: 1px solid #eaeaea;
-				list-style-image: none;
-				list-style-type: none;
+				font-weight: normal;
+				color: #000;
+			}
+		}
+	}
 
-				a:link {
-					color: #797979;
-				}
+	.field-name-student-services-sub-menu-, .field-name-about-pes-sidemenu, .field-name-school-services-sub-menu-, .field-name-affiliation-sub-menu, .field-name-news-events {
+		margin-bottom: 10px;
 
-				a.active {
-					color: #C31010;
+		h2.block-title {
+			background: #11baea;
+			padding: 10px;
+			color: #fff;
+			border-radius: 4px 4px 0 0;
+			//text-shadow: 0 0 3px #2d2d2d;
+			@include single-text-shadow(0, 0, 3px, false, #2d2d2d);
+		}
+
+		.tb-megamenu {
+			.nav > li {
+				float: none;
+				background: #fff;
+				border-bottom: 1px solid #c1c1c1;
+				border-right: 1px solid #c1c1c1;
+				border-left: 1px solid #c1c1c1;
+			}
+
+			.nav > .active > a {
+				background: #444;
+				color: #fff;
+				font-weight: bold;
+			}
+
+			.nav > li > a {
+				font-weight: normal;
+				padding: 6px 20px;
+				font-size: 11px;
+				border-right: none;
+				color: #000;
+
+				&:hover {
+					background: #b0afaf;
 				}
 			}
 		}
 	}
+}
+
+body {
+	font-family: 'lato', arial, helvetica, sans-serif;
 }
 
 .group-middle {

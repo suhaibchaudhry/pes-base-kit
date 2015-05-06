@@ -64,6 +64,11 @@ body.front {
 			background-color: transparent;
 			text-transform: lowercase;
 			
+			.dropdown-menu .active > a {
+				background: #11b5e4;
+			}
+
+			
 			.dropdown-toggle {
 				border: none;
 				color: #fff;

@@ -38,6 +38,8 @@ body.front #zone-branding-wrapper {
       float: none; }
     #zone-branding-wrapper #zone-branding .tb-megamenu .nav-collapse .dropdown-toggle {
       background-color: #000; }
+  #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu .active > a {
+    background: #11b5e4; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-toggle {
     border: none;
     color: #fff;

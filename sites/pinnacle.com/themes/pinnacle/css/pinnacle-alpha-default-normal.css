@@ -41,12 +41,14 @@ body.front #zone-branding-wrapper {
     color: #000;
     font-weight: normal;
     padding: 10px; }
+  #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu .active > a {
+    background: #11b5e4; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu {
     background-color: #fff; }
     #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu .active > a {
-      background: #fff;
+      background: #C31010;
       font-weight: bold;
-      color: #000; }
+      color: #11b5e4; }
     #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu li > a:hover {
       color: #000;
       font-weight: bold; }
