@@ -25,10 +25,19 @@ body p {
   font-size: 14px;
   line-height: 22px; }
 
+#block-tb-megamenu-main-menu .tb-megamenu .nav > li {
+  margin: 0 0 0 25px; }
+
+#block-tb-megamenu-main-menu ul li ul li a {
+  font-size: 12px;
+  text-shadow: 0 0 7px #e8e8e8;
+  color: #fff; }
+
 #block-tb-megamenu-main-menu ul li a {
-  font-size: 17px;
+  font-weight: 500;
+  font-size: 19px;
   text-shadow: 0 0 7px #d7d7d7;
-  color: #282828; }
+  color: #a30000; }
 
 #zone-header-wrapper {
   background: #3a3a3a;
@@ -44,6 +53,7 @@ body p {
     #zone-user-wrapper .region-user-second .region-user-second-inner {
       font-size: 10px; }
     #zone-user-wrapper .region-user-second div {
+      font-size: 15px;
       float: right;
       color: #fff;
       font-weight: bold;
@@ -59,7 +69,7 @@ body.front #zone-branding-wrapper {
   #zone-branding-wrapper #zone-branding .tb-megamenu button {
     width: 100%; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .row-fluid {
-    background: #11b5e4; }
+    background: #343434; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .nav li.dropdown.open > .dropdown-toggle {
     color: #fff; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-toggle {
@@ -261,8 +271,9 @@ h1#page-title {
 .group-right .field-name-student-services-sub-menu-, .group-right .field-name-about-pes-sidemenu, .group-right .field-name-school-services-sub-menu-, .group-right .field-name-affiliation-sub-menu, .group-right .field-name-news-events {
   margin-bottom: 10px; }
   .group-right .field-name-student-services-sub-menu- h2.block-title, .group-right .field-name-about-pes-sidemenu h2.block-title, .group-right .field-name-school-services-sub-menu- h2.block-title, .group-right .field-name-affiliation-sub-menu h2.block-title, .group-right .field-name-news-events h2.block-title {
+    font-size: 14px;
     background: #11baea;
-    padding: 10px;
+    padding: 9px 10px;
     color: #fff;
     border-radius: 4px 4px 0 0;
     text-shadow: 0 0 3px #2d2d2d; }

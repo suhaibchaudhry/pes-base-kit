@@ -8,13 +8,13 @@
     @include social_media-sprite(#{$image}-h);
   }
 }
-
+   
 @import "_mixins.scss";
 @import "compass/utilities/sprites";
 @import "social_media/*.png";
 
 //@include all-social_media-sprites;
-
+ 
  
 div.email-icon {
 	@include social_media-sprite(email);

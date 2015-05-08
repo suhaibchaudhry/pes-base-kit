@@ -1,46 +1,46 @@
 .social_media-sprite, div.email-icon, div.phone-icon, a.twitter-button, a.twitter-button:hover, a.facebook-button, a.facebook-button:hover, a.gplus-button, a.gplus-button:hover, a.youtube-button, a.youtube-button:hover {
-  background-image: url('../images/social_media-s5d1bf810b8.png');
+  background-image: url('../images/social_media-sce47080d13.png');
   background-repeat: no-repeat; }
 
 div.email-icon {
   background-position: 0 0;
-  padding: 0 0 0 43px; }
+  padding: 0 0 0 39px; }
 
 div.phone-icon {
-  background-position: 0 -184px;
-  padding: 0 0 0 45px; }
+  background-position: 0 -180px;
+  padding: 0 0 0 39px; }
 
 a.social-button {
   float: left; }
 
 a.twitter-button {
-  background-position: 0 -256px;
+  background-position: 0 -252px;
   height: 36px;
   width: 39px;
   text-indent: -9999px; }
   a.twitter-button:hover {
-    background-position: 0 -220px; }
+    background-position: 0 -216px; }
 
 a.facebook-button {
-  background-position: 0 -74px;
-  height: 38px;
-  width: 36px;
+  background-position: 0 -72px;
+  height: 36px;
+  width: 39px;
   text-indent: -9999px; }
   a.facebook-button:hover {
     background-position: 0 -36px; }
 
 a.gplus-button {
-  background-position: 0 -148px;
+  background-position: 0 -144px;
   height: 36px;
-  width: 38px;
+  width: 39px;
   text-indent: -9999px; }
   a.gplus-button:hover {
-    background-position: 0 -112px; }
+    background-position: 0 -108px; }
 
 a.youtube-button {
-  background-position: 0 -328px;
+  background-position: 0 -324px;
   height: 36px;
   width: 39px;
   text-indent: -9999px; }
   a.youtube-button:hover {
-    background-position: 0 -292px; }
+    background-position: 0 -288px; }
