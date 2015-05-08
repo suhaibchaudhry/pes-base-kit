@@ -5,6 +5,31 @@
 @import "_mixins.scss";
 @import "compass/css3";
 
+.view-location {
+	.view-content {
+		margin-bottom: 30px;
+	}
+
+	.views-row {
+		padding: 4px 20px;
+		margin-bottom: 20px;
+	}
+
+	.views-row-last {
+		margin: 0;
+	}
+
+	.views-row-odd {
+		background: #fff;
+		color: #454545;
+	}
+
+	.views-row-even {
+		background: #454545;
+		color: #fff;
+	}
+}
+
 #block-views-exp-location-page {
 	textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
 		font-weight: bold;

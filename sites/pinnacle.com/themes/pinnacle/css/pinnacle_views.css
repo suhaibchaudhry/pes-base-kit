@@ -3,6 +3,20 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
 @import url(//fonts.googleapis.com/css?family=Gentium+Basic:400,700);
 */
+.view-location .view-content {
+  margin-bottom: 30px; }
+.view-location .views-row {
+  padding: 4px 20px;
+  margin-bottom: 20px; }
+.view-location .views-row-last {
+  margin: 0; }
+.view-location .views-row-odd {
+  background: #fff;
+  color: #454545; }
+.view-location .views-row-even {
+  background: #454545;
+  color: #fff; }
+
 #block-views-exp-location-page textarea, #block-views-exp-location-page select, #block-views-exp-location-page input[type="date"], #block-views-exp-location-page input[type="datetime"], #block-views-exp-location-page input[type="datetime-local"], #block-views-exp-location-page input[type="email"], #block-views-exp-location-page input[type="month"], #block-views-exp-location-page input[type="number"], #block-views-exp-location-page input[type="password"], #block-views-exp-location-page input[type="search"], #block-views-exp-location-page input[type="tel"], #block-views-exp-location-page input[type="text"], #block-views-exp-location-page input[type="time"], #block-views-exp-location-page input[type="url"], #block-views-exp-location-page input[type="week"] {
   font-weight: bold; }
 

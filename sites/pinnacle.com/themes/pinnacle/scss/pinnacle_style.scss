@@ -392,6 +392,37 @@ h1#page-title {
 }
 
 .group-right {
+	.field-name-contact-info {
+		margin-bottom: 20px;
+
+		h2.block-title {
+			margin: 0;
+			background: #444;
+			padding: 8px 11px;
+			border-radius: 4px 4px 0 0;
+			color: #fff;
+			font-size: 15px;
+		}
+
+		.subtitle {
+			padding-left: 10px;
+			background: #c1c1c1;
+			border: 1px solid #c1c1c1;
+		}
+
+		.information {
+			margin: 0;
+			background: #fff;
+			padding: 4px 20px;
+			font-size: 11px;
+			font-weight: normal;
+			color: #000;
+			border-bottom: 1px solid #c1c1c1;
+			border-right: 1px solid #c1c1c1;
+			border-left: 1px solid #c1c1c1;
+		}
+	}
+
 	.field-name-still-have-questions-, .field-name-apply-now-side-bar {
 		background: #fff;
 		border-radius: 0 0 4px 4px;
@@ -473,6 +504,14 @@ body {
 }
 
 .group-middle {
+	.field-name-contact-webform {
+		margin-top: 80px;
+		
+		.webform-component--message {
+			width: 80%;
+		}
+	}
+
 	.breadcrumb {
 		margin: 0 20px 20px 0;
 		background: transparent;
