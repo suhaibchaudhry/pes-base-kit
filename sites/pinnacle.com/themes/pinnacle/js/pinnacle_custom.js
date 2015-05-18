@@ -12,7 +12,7 @@
 		if(this.firstLoad) {
 			this.$window = $(window);
 			this.$document = $(document);
-			this.$zoneWrap = $('#zone-postscript-wrapper, #zone-preface-wrapper', context);
+			this.$zoneWrap = $('#zone-postscript-wrapper', context);
 			this.$wraps = [];
 			var callback = this.contextualize(this.scrollHandler, this);
 			var dcallback = this.contextualize(this.triggerDimensions, this);
