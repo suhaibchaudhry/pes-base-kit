@@ -1,1 +1,44 @@
 /* This file will hold styles that are loaded using the same media query as the wide grid. */
+#zone-user-wrapper {
+	.region-user-second {
+		width: initial;
+	}
+}
+
+#zone-branding-wrapper {
+	#zone-branding {
+		.tb-megamenu {
+			.nav li {
+				padding: 0 15px;
+			}
+
+			.tb-megamenu-item:hover {
+				background: #eee;
+			}
+		}
+	}
+}
+
+.group-middle {
+	.field-name-contact-webform {
+		.webform-component--name, .webform-component--phone {
+			float: left;
+		}
+
+		.webform-component--name {
+			padding: 0 30px 0 0;
+		}
+	}
+}
+
+.ds-3col-stacked-fluid .group-right {
+	width: 25%;
+}
+
+.field-name-contact-us-map {
+	padding-bottom: 30px;
+
+	iframe {
+		width: 100%;
+	}
+}

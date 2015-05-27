@@ -2,6 +2,8 @@
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the normal and widescreen layouts. You may override these styles in the normal
  *  and widescreen CSS files as appropriate. */
+#zone-user-wrapper .region-user-second {
+  width: initial; }
 #zone-user-wrapper .region-user-second-inner {
   font-size: initial; }
   #zone-user-wrapper .region-user-second-inner div {
@@ -16,6 +18,9 @@ body.front #zone-branding-wrapper {
   -moz-box-shadow: 0 0 20px #505050;
   -webkit-box-shadow: 0 0 20px #505050;
   box-shadow: 0 0 20px #505050; }
+
+#block-tb-megamenu-main-menu .tb-megamenu .nav > li {
+  margin: 0 0 0 -4px; }
 
 #zone-postscript2 a.learnmore-button {
   position: absolute;
@@ -49,3 +54,14 @@ body.front #zone-branding-wrapper {
     float: right; }
 #zone-branding-wrapper #zone-branding .region-menu .primary-menu {
   float: right; }
+
+.field-name-contact-us-map {
+  padding-bottom: 30px; }
+  .field-name-contact-us-map iframe {
+    width: 100%; }
+
+.group-middle .field-name-contact-webform .form-item {
+  width: 80%; }
+
+.ds-3col-stacked-fluid .group-right {
+  width: 100%; }

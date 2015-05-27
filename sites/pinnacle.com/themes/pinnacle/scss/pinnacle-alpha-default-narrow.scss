@@ -5,6 +5,10 @@
 @import "compass/css3";
 
 #zone-user-wrapper {
+	.region-user-second {
+		width: initial;
+	}
+
 	.region-user-second-inner {
 		font-size: initial;
 		
@@ -22,6 +26,14 @@ body.front {
 	#zone-branding-wrapper {
 		position: relative;
 		@include single-box-shadow(0, 0, 20px, null, #505050, null);
+	}
+}
+
+#block-tb-megamenu-main-menu {
+	.tb-megamenu {
+		.nav > li {
+			margin: 0 0 0 -4px;
+		}
 	}
 }
 
@@ -87,4 +99,24 @@ body.front {
 			}
 		}
 	}
+}
+
+.field-name-contact-us-map {
+	padding-bottom: 30px;
+
+	iframe {
+		width: 100%;
+	}
+}
+
+.group-middle {
+	.field-name-contact-webform {
+		.form-item {
+			width: 80%;
+		}
+	}
+}
+
+.ds-3col-stacked-fluid .group-right {
+	width: 100%;
 }

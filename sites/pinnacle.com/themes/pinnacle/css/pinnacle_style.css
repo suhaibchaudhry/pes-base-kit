@@ -4,6 +4,7 @@
 */
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,700);
 .front .block-blockify-blockify-page-title {
   display: none; }
 .front #zone-header-wrapper {
@@ -16,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #11baea;
   text-shadow: 0 0 1px #9b9b9b; }
 
+.not-front h1 {
+  font-size: 25px;
+  color: #3a3a3a; }
+
 h2 {
   font-size: 38px; }
 
@@ -25,19 +30,16 @@ body p {
   font-size: 14px;
   line-height: 22px; }
 
-#block-tb-megamenu-main-menu .tb-megamenu .nav > li {
-  margin: 0 0 0 25px; }
-
 #block-tb-megamenu-main-menu ul li ul li a {
-  font-size: 12px;
+  font-size: 14px;
   text-shadow: 0 0 7px #e8e8e8;
-  color: #fff; }
+  color: #000; }
 
 #block-tb-megamenu-main-menu ul li a {
-  font-weight: 500;
-  font-size: 19px;
+  font-weight: 100;
+  font-family: 'open sans';
   text-shadow: 0 0 7px #d7d7d7;
-  color: #a30000; }
+  color: #444; }
 
 #zone-header-wrapper {
   background: #3a3a3a;
@@ -49,7 +51,8 @@ body p {
   background: #11BAEA;
   line-height: 36px; }
   #zone-user-wrapper .region-user-second {
-    background: #11BAEA; }
+    background: #11BAEA;
+    width: 100%; }
     #zone-user-wrapper .region-user-second .region-user-second-inner {
       font-size: 10px; }
     #zone-user-wrapper .region-user-second div {
@@ -69,23 +72,30 @@ body.front #zone-branding-wrapper {
   #zone-branding-wrapper #zone-branding .tb-megamenu button {
     width: 100%; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .row-fluid {
-    background: #343434; }
+    background: #eee; }
+  #zone-branding-wrapper #zone-branding .tb-megamenu .nav li {
+    text-transform: capitalize;
+    font-family: 'open sans';
+    font-weight: 100;
+    font-size: 16px; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .nav li.dropdown.open > .dropdown-toggle {
-    color: #fff; }
+    color: #000; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-toggle {
     border: none;
+    font-weight: 100;
     padding: 10px;
-    background-color: #000; }
+    background-color: #c1c1c1; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu {
-    background-color: #4B4B4A; }
+    background-color: #4B4B4A;
+    border-bottom: none; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu li a:hover, #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu li a:focus, #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-submenu li a:hover, #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-submenu li a:focus {
-    color: #fff; }
+    color: #a9233a; }
   #zone-branding-wrapper #zone-branding .tb-megamenu ul.tb-megamenu-nav li.level-1:last-child > a {
     padding-right: 15px; }
 #zone-branding-wrapper #zone-branding .region-menu {
   margin: 45px 0 0; }
   #zone-branding-wrapper #zone-branding .region-menu .main-menu a {
-    text-transform: lowercase;
+    text-transform: capitalize;
     border-color: #fff;
     background-color: #fff;
     color: #000;
@@ -245,6 +255,11 @@ h1#page-title {
 .group-header .field-name-field-page-banner {
   margin-bottom: 20px; }
 
+.ds-3col-stacked-fluid .group-right {
+  width: 100%; }
+
+.group-right p.social-information {
+  margin-left: 17px; }
 .group-right .field-name-contact-info {
   margin-bottom: 20px; }
   .group-right .field-name-contact-info h2.block-title {
@@ -268,29 +283,34 @@ h1#page-title {
     border-bottom: 1px solid #c1c1c1;
     border-right: 1px solid #c1c1c1;
     border-left: 1px solid #c1c1c1; }
-.group-right .field-name-still-have-questions-, .group-right .field-name-apply-now-side-bar {
+.group-right .field-name-still-have-questions-, .group-right .field-name-apply-now-side-bar, .group-right .field-name-contact-us-social-media {
   background: #fff;
   border-radius: 0 0 4px 4px;
   margin-bottom: 10px; }
-  .group-right .field-name-still-have-questions- h2.block-title, .group-right .field-name-apply-now-side-bar h2.block-title {
+  .group-right .field-name-still-have-questions- h2.block-title, .group-right .field-name-apply-now-side-bar h2.block-title, .group-right .field-name-contact-us-social-media h2.block-title {
     background: #444;
     padding: 8px 11px;
     border-radius: 4px 4px 0 0;
     color: #fff;
     font-size: 15px; }
-  .group-right .field-name-still-have-questions- .apply-now, .group-right .field-name-apply-now-side-bar .apply-now {
+  .group-right .field-name-still-have-questions- .apply-now, .group-right .field-name-apply-now-side-bar .apply-now, .group-right .field-name-contact-us-social-media .apply-now {
     font-size: 11px;
     font-weight: normal;
     color: #000; }
-  .group-right .field-name-still-have-questions- .contact-us-link-wrapper, .group-right .field-name-still-have-questions- .apply-now, .group-right .field-name-apply-now-side-bar .contact-us-link-wrapper, .group-right .field-name-apply-now-side-bar .apply-now {
+  .group-right .field-name-still-have-questions- .contact-us-link-wrapper, .group-right .field-name-still-have-questions- .apply-now, .group-right .field-name-apply-now-side-bar .contact-us-link-wrapper, .group-right .field-name-apply-now-side-bar .apply-now, .group-right .field-name-contact-us-social-media .contact-us-link-wrapper, .group-right .field-name-contact-us-social-media .apply-now {
     padding: 4px 20px;
     border-bottom: 1px solid #c1c1c1;
     border-right: 1px solid #c1c1c1;
     border-left: 1px solid #c1c1c1; }
-    .group-right .field-name-still-have-questions- .contact-us-link-wrapper .contact-us-button, .group-right .field-name-still-have-questions- .apply-now .contact-us-button, .group-right .field-name-apply-now-side-bar .contact-us-link-wrapper .contact-us-button, .group-right .field-name-apply-now-side-bar .apply-now .contact-us-button {
+    .group-right .field-name-still-have-questions- .contact-us-link-wrapper .contact-us-button, .group-right .field-name-still-have-questions- .apply-now .contact-us-button, .group-right .field-name-apply-now-side-bar .contact-us-link-wrapper .contact-us-button, .group-right .field-name-apply-now-side-bar .apply-now .contact-us-button, .group-right .field-name-contact-us-social-media .contact-us-link-wrapper .contact-us-button, .group-right .field-name-contact-us-social-media .apply-now .contact-us-button {
       font-size: 11px;
       font-weight: normal;
       color: #000; }
+.group-right .field-name-contact-us-social-media {
+  background: #444;
+  margin-bottom: 20px; }
+  .group-right .field-name-contact-us-social-media h2.block-title {
+    background: #444; }
 .group-right .field-name-student-services-sub-menu-, .group-right .field-name-about-pes-sidemenu, .group-right .field-name-school-services-sub-menu-, .group-right .field-name-affiliation-sub-menu, .group-right .field-name-news-events {
   margin-bottom: 10px; }
   .group-right .field-name-student-services-sub-menu- h2.block-title, .group-right .field-name-about-pes-sidemenu h2.block-title, .group-right .field-name-school-services-sub-menu- h2.block-title, .group-right .field-name-affiliation-sub-menu h2.block-title, .group-right .field-name-news-events h2.block-title {
@@ -322,15 +342,26 @@ h1#page-title {
 body {
   font-family: 'lato', arial, helvetica, sans-serif; }
 
+.field-name-contact-us-map {
+  padding-bottom: 30px; }
+  .field-name-contact-us-map iframe {
+    width: 100%; }
+
+.group-middle .field-name-contact-content {
+  width: 130%; }
 .group-middle .field-name-contact-webform {
   margin-top: 80px; }
-  .group-middle .field-name-contact-webform .webform-component--message {
+  .group-middle .field-name-contact-webform .form-item {
     width: 80%; }
+    .group-middle .field-name-contact-webform .form-item input {
+      height: 30px; }
+  .group-middle .field-name-contact-webform .webform-component--message {
+    width: 134%; }
 .group-middle .breadcrumb {
   margin: 0 20px 20px 0;
   background: transparent;
   border: none;
-  color: #444;
+  color: #4e4e4e;
   padding: 0;
   font-size: 15px; }
   .group-middle .breadcrumb a {

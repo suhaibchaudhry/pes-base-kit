@@ -1,6 +1,8 @@
 /* This file will hold styles that are loaded using the same media query as the normal grid. */
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+#zone-user-wrapper .region-user-second {
+  width: initial; }
 #zone-user-wrapper .region-user-second-inner {
   font-size: initial; }
   #zone-user-wrapper .region-user-second-inner div {
@@ -39,20 +41,31 @@ body.front #zone-branding-wrapper {
   #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-toggle {
     border: none;
     color: #000;
-    font-weight: normal;
+    font-weight: 100;
     padding: 10px; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu .active > a {
-    background: #11b5e4; }
+    background: #eee; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu {
     background-color: #fff; }
     #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu .active > a {
-      background: #C31010;
       font-weight: bold;
-      color: #11b5e4; }
+      color: #a9233a; }
     #zone-branding-wrapper #zone-branding .tb-megamenu .dropdown-menu li > a:hover {
-      color: #000;
-      font-weight: bold; }
+      color: #a9233a; }
   #zone-branding-wrapper #zone-branding .tb-megamenu .nav li.dropdown.open > .dropdown-toggle {
-    color: #000; }
+    color: #a9233a; }
 #zone-branding-wrapper #zone-branding .region-menu .primary-menu {
   float: right; }
+
+.group-middle .field-name-contact-webform .form-item {
+  width: 35%; }
+.group-middle .field-name-contact-webform .webform-component-textarea {
+  width: 80%; }
+
+.ds-3col-stacked-fluid .group-right {
+  width: 25%; }
+
+.field-name-contact-us-map {
+  padding-bottom: 30px; }
+  .field-name-contact-us-map iframe {
+    width: 100%; }

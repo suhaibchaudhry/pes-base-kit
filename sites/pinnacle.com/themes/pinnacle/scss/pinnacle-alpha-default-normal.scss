@@ -4,6 +4,10 @@
 @import "compass/css3";
 
 #zone-user-wrapper {
+	.region-user-second {
+		width: initial;
+	}
+
 	.region-user-second-inner {
 		font-size: initial;
 		
@@ -63,12 +67,12 @@ body.front {
 			.dropdown-toggle {
 				border: none;
 				color: #000;
-				font-weight: normal;
+				font-weight: 100;
 				padding: 10px;
 			}
 
 			.dropdown-menu .active > a {
-				background: #11b5e4;
+				background: #eee;
 			}
 
 
@@ -76,20 +80,21 @@ body.front {
 				background-color: #fff;
 
 				.active > a {
-					background: #C31010;
+					//background: #C31010;
 					font-weight: bold;
-					color: #11b5e4;
+					color: #a9233a;
+					//color: #11b5e4;
 				}
 
 				li > a:hover {
-					color: #000;
-					font-weight: bold;
+					color: #a9233a;
+					//font-weight: bold;
 				}
 			}
 
 			.nav {
 				li.dropdown.open > .dropdown-toggle {
-					color: #000;
+					color: #a9233a;
 				}
 			}
 		}
@@ -99,5 +104,29 @@ body.front {
 					float: right;
 			}
 		}
+	}
+}
+
+.group-middle {
+	.field-name-contact-webform {
+		.form-item {
+			width: 35%;
+		}
+
+		.webform-component-textarea {
+			width: 80%;
+		}
+	}
+}
+
+.ds-3col-stacked-fluid .group-right {
+	width: 25%;
+}
+
+.field-name-contact-us-map {
+	padding-bottom: 30px;
+
+	iframe {
+		width: 100%;
 	}
 }
